@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fun Facts</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+  :root {
+    --bg: #0a0a0f;
+    --card: #111118;
+    --accent: #f0c040;
+    --accent2: #e05a2b;
+    --text: #f0ece0;
+    --muted: #888070;
+    --border: rgba(240,192,64,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Atmospheric background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 10% 90%, rgba(224,90,43,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 90% 10%, rgba(240,192,64,0.07) 0%, transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Subtle grid texture */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(240,192,64,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(240,192,64,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 48px 72px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    opacity: 0;
+    animation: fadeDown 0.8s ease forwards 0.2s;
+  }
+
+  .logo {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .logo-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  .logo-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .clock {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  .fact-counter {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* Main fact card */
+  .fact-stage {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .fact-card {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+
+  .fact-category {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    color: var(--accent2);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+  }
+
+  .fact-number {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 180px;
+    line-height: 1;
+    color: rgba(240,192,64,0.04);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .fact-text {
+    font-size: clamp(32px, 3.2vw, 54px);
+    font-weight: 300;
+    line-height: 1.35;
+    color: var(--text);
+    opacity: 0;
+    animation: fadeUp 0.7s ease forwards 0.1s;
+  }
+
+  .fact-text em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 300;
+  }
+
+  .fact-divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    margin: 32px 0;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.2s;
+  }
+
+  .fact-trivia {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 700px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.3s;
+  }
+
+  /* Loading state */
+  .loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .loading-dots {
+    display: flex;
+    gap: 12px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+  .dot:nth-child(2) { animation-delay: 0.2s; background: var(--accent2); }
+  .dot:nth-child(3) { animation-delay: 0.4s; }
+
+  .loading-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  /* Progress bar */
+  .progress-track {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,0.06);
+    z-index: 10;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent2), var(--accent));
+    width: 0%;
+    transition: width linear;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards 0.5s;
+  }
+
+  .next-label {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .next-label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: var(--muted);
+  }
+
+  .source-tag {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: rgba(136,128,112,0.5);
+    text-transform: uppercase;
+  }
+
+  /* Transition overlay */
+  .transition-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 50;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .transition-overlay.active { opacity: 1; }
+
+  /* Corner accents */
+  .corner {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+  }
+  .corner-tl { top: 24px; left: 24px; border-top: 1px solid var(--accent); border-left: 1px solid var(--accent); }
+  .corner-tr { top: 24px; right: 24px; border-top: 1px solid var(--accent); border-right: 1px solid var(--accent); }
+  .corner-bl { bottom: 24px; left: 24px; border-bottom: 1px solid var(--accent); border-left: 1px solid var(--accent); }
+  .corner-br { bottom: 24px; right: 24px; border-bottom: 1px solid var(--accent); border-right: 1px solid var(--accent); }
+
+  /* Animations */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(0.7); opacity: 0.4; }
+    50% { transform: scale(1); opacity: 1; }
+  }
+
+  /* Nav arrows */
+  .nav-arrows {
+    display: flex;
+    gap: 12px;
+  }
+
+  .nav-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 22px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    line-height: 1;
+  }
+
+  .nav-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(240,192,64,0.08);
+  }
+
+  .nav-btn:active {
+    transform: scale(0.92);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="corner corner-tl"></div>
+<div class="corner corner-tr"></div>
+<div class="corner corner-bl"></div>
+<div class="corner corner-br"></div>
+<div class="transition-overlay" id="overlay"></div>
+
+<div class="container">
+  <header class="header">
+    <div class="logo">
+      <span class="logo-label">Daily</span>
+      <span class="logo-title">Fun Facts</span>
+    </div>
+    <div class="header-right">
+      <span class="fact-counter" id="factCounter">Fact 1 of 10</span>
+      <span class="clock" id="clock">—</span>
+    </div>
+  </header>
+
+  <main class="fact-stage">
+    <div class="fact-card" id="factCard">
+      <div class="loading-state">
+        <div class="loading-dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <p class="loading-text">Fetching amazing facts…</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span class="next-label">Next fact in <span id="nextIn">—</span></span>
+    <div class="nav-arrows">
+      <button class="nav-btn" id="prevBtn" title="Previous fact">&#8592;</button>
+      <button class="nav-btn" id="nextBtn" title="Next fact">&#8594;</button>
+    </div>
+    <span class="source-tag">511 curated facts</span>
+  </footer>
+</div>
+
+<div class="progress-track">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<script>
+const DISPLAY_DURATION = 900000; // 15 minutes per fact
+
+const ALL_FACTS = [
+  { category: "Animals", fact: "Dolphins have names for each other — unique <em>signature whistles</em> they use to call individuals.", detail: "They'll respond to their own whistle even when played back by researchers." },
+  { category: "Animals", fact: "A group of owls is called a <em>parliament</em>.", detail: "Owls can rotate their heads up to 270 degrees thanks to extra neck vertebrae and specialized blood vessels." },
+  { category: "Animals", fact: "Cats have a specialized <em>collarbone</em> that lets them always land on their feet.", detail: "The righting reflex works in as little as 30 cm of fall distance." },
+  { category: "Animals", fact: "Goats have <em>rectangular pupils</em> that give them 320-degree vision.", detail: "This wide field of view helps prey animals spot predators without moving their heads." },
+  { category: "Animals", fact: "The immortal jellyfish can <em>revert back to its juvenile state</em> when stressed or old.", detail: "Turritopsis dohrnii is the only known animal capable of reverting to sexual immaturity." },
+  { category: "Animals", fact: "Hummingbirds are the only birds that can fly <em>backwards</em>.", detail: "They can also hover in place and fly sideways, making them the most agile birds on Earth." },
+  { category: "Animals", fact: "A shrimp's heart is located <em>in its head</em>.", detail: "Most of a shrimp's vital organs are packed into the cephalothorax — the front fused section." },
+  { category: "Animals", fact: "Butterflies taste with their <em>feet</em>.", detail: "Taste receptors on their legs help them identify plants and determine if they're suitable for laying eggs." },
+  { category: "Animals", fact: "Sea otters have the <em>densest fur</em> of any animal — up to a million hairs per square inch.", detail: "They have no blubber, so this thick coat is their only insulation against cold water." },
+  { category: "Animals", fact: "Penguins propose to their mates with a <em>pebble</em>.", detail: "Male Gentoo penguins search for the perfect pebble to present to a female as a sign of commitment." },
+  { category: "Animals", fact: "Hippos secrete a red liquid that acts as both <em>sunscreen and antibiotic</em>.", detail: "It's not sweat or blood — scientists call it 'blood sweat' but it's a unique skin secretion." },
+  { category: "Animals", fact: "Polar bears have <em>black skin</em> under their white fur.", detail: "The fur is actually transparent and hollow, channeling sunlight to their dark skin for warmth." },
+  { category: "Animals", fact: "A cockroach can live for <em>weeks without its head</em>.", detail: "It only dies eventually because it can't drink water without a mouth." },
+  { category: "Animals", fact: "Flamingos can only eat when their heads are <em>upside down</em>.", detail: "Their bills are specially designed to filter feed with their heads inverted in the water." },
+  { category: "Animals", fact: "The blue whale's heart is so big a <em>small child could crawl through its arteries</em>.", detail: "It weighs about 180 kg and beats just 8–10 times per minute when diving." },
+  { category: "Animals", fact: "Elephants are the only non-human animals known to perform <em>death rituals</em>.", detail: "They return to the bones of deceased family members and have been seen carrying tusks." },
+  { category: "Animals", fact: "Sloths move so slowly that <em>algae grows in their fur</em>.", detail: "This green tint acts as camouflage in the rainforest canopy." },
+  { category: "Animals", fact: "A flock of crows is called a <em>murder</em>.", detail: "The name likely originated from old folklore associating crows with death omens." },
+  { category: "Animals", fact: "Kookaburras' famous laugh is actually a <em>territorial call</em>.", detail: "Family groups chorus together at dawn and dusk to announce their territory to rivals." },
+  { category: "Animals", fact: "Giraffes have the same number of neck vertebrae as <em>humans</em> — just seven, but much larger.", detail: "Each vertebra can be over 25 cm long in an adult giraffe." },
+  { category: "Animals", fact: "Male seahorses are the ones who get <em>pregnant and give birth</em>.", detail: "The female deposits eggs into the male's pouch, where he fertilizes and carries them." },
+  { category: "Animals", fact: "Ants can carry <em>50 times their own body weight</em>.", detail: "Their muscles make up a higher proportion of their body mass than in larger animals." },
+  { category: "Animals", fact: "Crows can use <em>tools</em> and even manufacture hooks from wire to retrieve food.", detail: "New Caledonian crows display tool-making abilities comparable to early human craftsmanship." },
+  { category: "Animals", fact: "Sharks must keep swimming to breathe — if they stop, they <em>suffocate</em>.", detail: "This is true for obligate ram ventilators like the great white, though some sharks can pump water over gills." },
+  { category: "Animals", fact: "The axolotl can <em>regrow entire limbs</em>, hearts, and even parts of its brain.", detail: "Scientists study this salamander to understand regeneration in hopes of applying it to human medicine." },
+  { category: "Animals", fact: "A chameleon's tongue can be twice its <em>body length</em> and accelerates faster than a sports car.", detail: "It reaches prey in under 0.07 seconds using elastic tissue that stores and releases energy." },
+  { category: "Animals", fact: "Platypuses don't have stomachs — food goes <em>directly from esophagus to intestine</em>.", detail: "They also lack nipples, sweating through their skin to feed milk to young." },
+  { category: "Animals", fact: "Lions sleep up to <em>20 hours a day</em>.", detail: "They conserve energy in the African heat, doing most of their hunting at night." },
+  { category: "Animals", fact: "A group of jellyfish is called a <em>smack</em>.", detail: "Jellyfish have existed for over 500 million years, making them older than dinosaurs by 250 million years." },
+  { category: "Animals", fact: "Parrots grieve — they show <em>mourning behaviors</em> after the death of flock mates.", detail: "African Grey parrots in particular show depression and behavioral changes after losing a companion." },
+  { category: "Animals", fact: "Wolverines have been documented fighting off <em>grizzly bears</em> over food.", detail: "They're the largest land-dwelling member of the weasel family and famously ferocious." },
+  { category: "Animals", fact: "Electric eels can generate up to <em>860 volts</em> of electricity.", detail: "They use low-voltage pulses for navigation and communication, reserving high-voltage shocks for hunting." },
+  { category: "Animals", fact: "Box jellyfish have <em>24 eyes</em> but no brain.", detail: "They process visual input through a nerve ring — somehow coordinating complex behavior without a central brain." },
+  { category: "Animals", fact: "Macaques in Japan have been observed <em>washing potatoes in seawater</em> — and taught it to others.", detail: "This is one of the most celebrated examples of cultural transmission in non-human animals." },
+  { category: "Animals", fact: "The mimic octopus can impersonate over <em>15 different species</em>.", detail: "It mimics lionfish, flatfish, and sea snakes by contorting its body and changing patterns." },
+  { category: "Animals", fact: "A rhinoceros horn is made of <em>compressed hair</em>, not bone.", detail: "It's composed almost entirely of keratin — the same protein in human fingernails." },
+  { category: "Animals", fact: "Dogs can smell your <em>emotions</em> through chemical changes in your sweat.", detail: "Studies show dogs react differently to the scent of fear versus happiness in humans." },
+  { category: "Animals", fact: "Barn owls can hunt in <em>complete darkness</em> using only their hearing.", detail: "Their asymmetrical ears let them triangulate sound with extraordinary precision." },
+  { category: "Animals", fact: "Ravens have been observed <em>playing</em> — including sliding down snowy rooftops repeatedly just for fun.", detail: "Play behavior is considered a sign of advanced cognition and emotional capacity." },
+  { category: "Animals", fact: "The mantis shrimp has <em>16 types of color receptors</em> — humans have only 3.", detail: "Despite this, researchers found mantis shrimp are surprisingly poor at distinguishing similar colors." },
+  { category: "Animals", fact: "The axolotl was considered a <em>god</em> by the Aztecs — a disguised form of the lightning deity Xolotl.", detail: "It nearly went extinct but captive breeding programs have kept the species alive." },
+  { category: "Animals", fact: "Frogs don't drink water — they absorb it through their <em>skin</em>.", detail: "Their permeable skin also makes them highly sensitive to environmental pollutants." },
+  { category: "Animals", fact: "Cuttlefish can change the <em>texture and color</em> of their skin in milliseconds.", detail: "They use this for camouflage, communication, and courtship displays." },
+  { category: "Animals", fact: "Bats are the only mammals capable of <em>true sustained flight</em>.", detail: "Their wings are elongated fingers connected by a thin membrane of skin." },
+  { category: "Animals", fact: "Squirrels forget where they buried about <em>74% of their nuts</em>.", detail: "Unrecovered nuts often sprout into trees, making squirrels inadvertent foresters." },
+  { category: "Animals", fact: "The pistol shrimp creates a <em>plasma bubble</em> hotter than the Sun's surface when it snaps its claw.", detail: "The cavitation bubble collapses in microseconds, producing heat, light, and a shockwave that stuns prey." },
+  { category: "Animals", fact: "Elephants are pregnant for <em>22 months</em> — the longest gestation of any land mammal.", detail: "Calves are born able to walk and already weigh around 100 kg." },
+  { category: "Animals", fact: "A group of cats is called a <em>clowder</em>.", detail: "Domestic cats have lived alongside humans for at least 10,000 years." },
+  { category: "Animals", fact: "The blue-ringed octopus is the size of a golf ball but carries enough venom to <em>kill 26 humans</em>.", detail: "There is no antivenom — the only treatment is artificial respiration until the toxin wears off." },
+  { category: "Animals", fact: "Reindeer eyes change from gold in summer to <em>blue in winter</em> to improve arctic low-light vision.", detail: "This seasonal color change in eyes is unique among mammals." },
+  { category: "Animals", fact: "Piranhas make a <em>barking sound</em> when they feel threatened.", detail: "They use specialized muscles to produce sounds by vibrating their swim bladder." },
+  { category: "Animals", fact: "Some species of gecko can shed their <em>entire outer skin</em> and then eat it.", detail: "Eating shed skin recycles nutrients and removes evidence of their presence from predators." },
+  { category: "Animals", fact: "The longest recorded flight of a chicken was <em>13 seconds</em>.", detail: "Chickens can fly short distances but their heavy bodies limit sustained flight." },
+  { category: "Animals", fact: "Wolves can hear sounds up to <em>10 miles away</em> in open terrain.", detail: "Their ears can swivel independently to locate the source of a sound precisely." },
+  { category: "Animals", fact: "Humpback whales sing the most <em>complex songs</em> of any animal — lasting up to 20 hours.", detail: "Only males sing, and all whales in the same ocean basin gradually adopt new songs." },
+  { category: "Animals", fact: "A group of hedgehogs is called an <em>array</em>.", detail: "Hedgehog spines are hollow hairs stiffened with keratin — each animal has around 5,000 spines." },
+  { category: "Animals", fact: "Crocodiles swallow <em>stones</em> to help digest food and regulate buoyancy.", detail: "These stones, called gastroliths, grind tough material in the stomach." },
+  { category: "Animals", fact: "The Greenland shark can live for over <em>500 years</em>, making it the longest-lived vertebrate.", detail: "They reach sexual maturity at around 150 years and grow less than 1 cm per year." },
+  { category: "Animals", fact: "Spiders recycle their webs by <em>eating them</em> to reclaim the protein.", detail: "Web silk is energetically expensive to produce, so reabsorbing it saves valuable resources." },
+  { category: "Animals", fact: "Koalas have <em>fingerprints</em> almost identical to human fingerprints.", detail: "Their prints are so similar they have occasionally confused forensic investigators at crime scenes." },
+  { category: "Animals", fact: "Moths can <em>navigate by the Moon</em> and were confused by artificial lights, causing them to spiral inward.", detail: "This explains why moths are drawn to flames and light bulbs." },
+  { category: "Animals", fact: "Bees can recognize <em>human faces</em> using the same holistic processing technique humans use.", detail: "They can learn to associate specific faces with food rewards in experiments." },
+  { category: "Animals", fact: "The average cow produces about <em>200,000 glasses of milk</em> in her lifetime.", detail: "A high-producing dairy cow can give over 30 liters per day." },
+  { category: "Animals", fact: "Parrots can live for over <em>80 years</em> in captivity.", detail: "The oldest known parrot was a Major Mitchell's cockatoo that lived to 83." },
+  { category: "Animals", fact: "Tiger sharks have a second eyelid called a <em>nictitating membrane</em> that closes before biting.", detail: "Many sharks roll their eyes back instead — tiger sharks use this translucent inner eyelid." },
+  { category: "Animals", fact: "Kangaroos can't <em>walk backwards</em>.", detail: "This biological quirk is why the kangaroo features on Australia's coat of arms — symbolizing forward progress." },
+  { category: "Animals", fact: "Lobsters have <em>teeth in their stomachs</em>.", detail: "The gastric mill — three grinding teeth inside the stomach — processes food before it reaches digestion." },
+  { category: "Animals", fact: "Dolphins sleep with <em>one eye open</em> by resting only half their brain at a time.", detail: "This unihemispheric sleep allows them to breathe consciously and watch for threats." },
+  { category: "Animals", fact: "A group of meerkats is called a <em>mob</em> — and they take turns as lookouts.", detail: "Sentinels rotate duty every hour, standing upright and giving specific alarm calls for different predators." },
+  { category: "Animals", fact: "Capuchin monkeys rub <em>millipedes</em> into their fur as insect repellent.", detail: "The millipedes secrete benzoquinones that deter mosquitoes — a form of tool use for medicine." },
+  { category: "Animals", fact: "The tongue of a blue whale weighs about <em>3 tonnes</em>.", detail: "An elephant could stand on a blue whale's tongue." },
+  { category: "Animals", fact: "Penguins walk about <em>50 miles</em> to reach their breeding grounds each year.", detail: "Emperor penguins march in huddles that rotate to share warmth against Antarctic winds." },
+  { category: "Animals", fact: "A group of ferrets is called a <em>business</em>.", detail: "Ferrets were used for centuries to hunt rabbits by flushing them out of burrows — a practice called ferreting." },
+  { category: "Animals", fact: "Narwhals' tusks are actually <em>teeth</em> — a single enlarged canine tooth that spirals outward.", detail: "The tusk can grow up to 3 metres long and is hollow, containing millions of nerve endings." },
+  { category: "Space", fact: "There are more stars in the universe than <em>grains of sand on all Earth's beaches</em>.", detail: "Current estimates put the number of stars at around 10^24 — a septillion." },
+  { category: "Space", fact: "The Voyager 1 probe, launched in 1977, is now in <em>interstellar space</em>.", detail: "It's the most distant human-made object, over 23 billion km from Earth." },
+  { category: "Space", fact: "Mars has the tallest volcano in the solar system — <em>Olympus Mons</em> is nearly 3 times the height of Everest.", detail: "It's 21 km high and so wide it would cover France entirely." },
+  { category: "Space", fact: "There is a diamond planet — <em>55 Cancri e</em> — that may have a surface of graphite and diamond.", detail: "It orbits so close to its star that a year there lasts only 18 Earth hours." },
+  { category: "Space", fact: "Jupiter's Great Red Spot is a storm that has been raging for at least <em>350 years</em>.", detail: "It's been shrinking in recent decades and could disappear within a few decades." },
+  { category: "Space", fact: "Light from the Sun takes <em>8 minutes and 20 seconds</em> to reach Earth.", detail: "But it takes light nearly 100,000 years to travel from the Sun's core to its surface." },
+  { category: "Space", fact: "Space smells like <em>seared steak and raspberries</em>, according to astronauts.", detail: "The scent comes from dying stars producing a molecule called ethyl formate." },
+  { category: "Space", fact: "Black holes can <em>sing</em> — NASA recorded pressure waves from one as sound.", detail: "The black hole in Perseus sends out pressure waves that, scaled up, produce a B-flat 57 octaves below middle C." },
+  { category: "Space", fact: "On Mercury, a day is longer than a <em>year</em>.", detail: "Mercury rotates so slowly that it completes two orbits of the Sun for every three rotations." },
+  { category: "Space", fact: "The Milky Way galaxy is on a collision course with <em>Andromeda</em> — arriving in about 4 billion years.", detail: "The galaxies will mostly pass through each other; individual star collisions are unlikely." },
+  { category: "Space", fact: "Europa, a moon of Jupiter, has a subsurface ocean with more water than <em>all of Earth's oceans combined</em>.", detail: "It's considered one of the most promising places to search for extraterrestrial life." },
+  { category: "Space", fact: "A teaspoon of a white dwarf star would weigh about <em>15 tonnes</em> on Earth.", detail: "White dwarfs are incredibly dense but not as extreme as neutron stars." },
+  { category: "Space", fact: "The largest known star, UY Scuti, is so big that if placed in our solar system, its surface would reach <em>beyond Jupiter</em>.", detail: "It's about 1,700 times the radius of the Sun." },
+  { category: "Space", fact: "There are rogue planets drifting through space <em>without any star</em> to orbit.", detail: "These 'free-floating planets' may outnumber stars in the galaxy." },
+  { category: "Space", fact: "Io, a moon of Jupiter, is the <em>most volcanically active</em> body in the solar system.", detail: "Its volcanoes are driven by gravitational squeezing from Jupiter's immense tidal forces." },
+  { category: "Space", fact: "The Hubble Space Telescope has traveled over <em>7 billion km</em> orbiting Earth since launch.", detail: "It completes about 15 orbits per day at around 27,000 km/h." },
+  { category: "Space", fact: "If two pieces of the same metal touch in space, they <em>permanently bond</em> — a process called cold welding.", detail: "There's no oxide layer in a vacuum to prevent the atoms from fusing." },
+  { category: "Space", fact: "Astronauts grow about <em>5 cm taller</em> in space.", detail: "Without gravity compressing the spine, the vertebral discs expand slightly." },
+  { category: "Space", fact: "The first living creature to orbit Earth was a dog named <em>Laika</em> in 1957.", detail: "She traveled aboard Soviet satellite Sputnik 2; her mission was one-way." },
+  { category: "Space", fact: "On the International Space Station, astronauts experience <em>16 sunrises and sunsets</em> per day.", detail: "The ISS orbits Earth every 90 minutes at about 28,000 km/h." },
+  { category: "Space", fact: "Space is completely <em>silent</em> because there's no medium for sound waves to travel through.", detail: "Explosions in space would produce no sound — but shockwaves can still propagate through plasma." },
+  { category: "Space", fact: "Saturn has a hexagonal storm at its <em>north pole</em> that has persisted for decades.", detail: "Each side of the hexagon is about 14,500 km long — wider than the Earth." },
+  { category: "Space", fact: "The Andromeda Galaxy is visible to the naked eye on a clear night — it's <em>2.5 million light-years away</em>.", detail: "It's the most distant object visible to the unaided human eye." },
+  { category: "Space", fact: "Astronauts cannot cry in space — tears form but <em>don't fall</em>, they pool around the eyes.", detail: "The liquid forms a sphere due to surface tension in microgravity." },
+  { category: "Space", fact: "The Moon is slowly <em>drifting away</em> from Earth at about 3.8 cm per year.", detail: "In about 600 million years, it will be too far away to cause total solar eclipses." },
+  { category: "Space", fact: "Mars dust storms can engulf the <em>entire planet</em> for months at a time.", detail: "Global dust storms can last weeks and block so much sunlight that solar-powered rovers must hibernate." },
+  { category: "Space", fact: "The universe is not only expanding — its expansion is <em>accelerating</em>.", detail: "The mysterious force driving this is called dark energy and makes up 68% of the universe." },
+  { category: "Space", fact: "Titan, Saturn's moon, has lakes and rivers of <em>liquid methane</em> instead of water.", detail: "Its thick nitrogen atmosphere and hydrocarbon cycle make it the most Earth-like body in the solar system." },
+  { category: "Space", fact: "Pulsars are neutron stars that spin up to <em>700 times per second</em>.", detail: "They emit beams of radiation that sweep through space like a lighthouse." },
+  { category: "Space", fact: "The cosmic microwave background radiation is the <em>afterglow of the Big Bang</em>, still detectable today.", detail: "It was accidentally discovered in 1965 by two Bell Labs engineers as unexplained radio noise." },
+  { category: "Space", fact: "Neptune has winds faster than any other planet — reaching <em>2,100 km/h</em>.", detail: "Despite being the farthest planet and coldest, Neptune has the most violent weather in the solar system." },
+  { category: "Space", fact: "The James Webb Space Telescope can see objects formed just <em>200 million years</em> after the Big Bang.", detail: "It detects infrared light from such ancient galaxies that their light has been red-shifted beyond visible spectrum." },
+  { category: "History", fact: "Napoleon Bonaparte was once <em>attacked by rabbits</em>.", detail: "After Waterloo celebrations, he organized a rabbit hunt — but domesticated rabbits swarmed him instead of fleeing." },
+  { category: "History", fact: "Ancient Egyptians used <em>moldy bread</em> as an antibiotic treatment for infected wounds.", detail: "This accidental discovery predates penicillin by thousands of years." },
+  { category: "History", fact: "Samuel Morse, inventor of Morse code, was also a <em>prominent portrait painter</em>.", detail: "He founded the National Academy of Design before pivoting to telegraphy." },
+  { category: "History", fact: "The Library of Alexandria wasn't destroyed in a single fire — it <em>declined slowly over centuries</em>.", detail: "Julius Caesar accidentally burned part of it in 48 BC, but it persisted for hundreds more years." },
+  { category: "History", fact: "Ancient Greeks invented the concept of the <em>alarm clock</em> using water clocks with bells.", detail: "Ctesibius of Alexandria built a water-powered alarm device around 250 BC." },
+  { category: "History", fact: "Abraham Lincoln was a <em>licensed bartender</em>.", detail: "He co-owned Berry and Lincoln, a general store in New Salem that held a liquor license." },
+  { category: "History", fact: "George Washington's false teeth were made of <em>ivory, bone, and real human teeth</em> — not wood.", detail: "The wooden teeth myth is a misidentification from discoloration in portraits." },
+  { category: "History", fact: "The Colosseum in Rome could be <em>flooded for mock naval battles</em>.", detail: "Early Roman records describe naumachiae — staged sea battles performed in the arena." },
+  { category: "History", fact: "Ancient Romans celebrated a festival called <em>Saturnalia</em> where social roles were reversed.", detail: "During December, slaves were waited on by masters in a topsy-turvy week of feasting." },
+  { category: "History", fact: "Queen Victoria was the first British monarch photographed — and helped make <em>white wedding dresses</em> fashionable.", detail: "Before her 1840 wedding, brides wore whatever color dress they preferred." },
+  { category: "History", fact: "Leonardo da Vinci designed a <em>robot knight</em> in the 1490s.", detail: "Plans for an armored mechanical knight were discovered in his notebooks in the 1950s." },
+  { category: "History", fact: "The word 'salary' comes from the Latin <em>'salarium'</em> — payment made in salt.", detail: "Salt was so valuable in ancient times it was literally used as currency." },
+  { category: "History", fact: "Albert Einstein was offered the <em>presidency of Israel</em> in 1952 and declined.", detail: "He felt he lacked the natural aptitude for dealing with people in an official capacity." },
+  { category: "History", fact: "The shortest presidency in US history lasted <em>only 32 days</em>.", detail: "William Henry Harrison gave a long inauguration speech in cold rain and died of pneumonia shortly after." },
+  { category: "History", fact: "The Trojan War may have actually happened — archaeologists found <em>evidence of a burned city</em> at the site of ancient Troy.", detail: "Troy VIIa shows signs of violent destruction around 1180 BC, consistent with the traditional date of the war." },
+  { category: "History", fact: "The first words spoken over telephone were <em>'Mr. Watson, come here — I want to see you'</em>.", detail: "Alexander Graham Bell said this to his assistant on March 10, 1876." },
+  { category: "History", fact: "Coca-Cola was originally marketed as a <em>medical tonic</em> for headaches and morphine addiction.", detail: "It contained trace amounts of cocaine from coca leaf extract until 1903." },
+  { category: "History", fact: "Julius Caesar was kidnapped by <em>pirates</em> as a young man and paid his own ransom.", detail: "He reportedly joked he'd return to crucify them — and he did." },
+  { category: "History", fact: "Marie Curie was the first person to win <em>two Nobel Prizes</em> in two different sciences.", detail: "She won in Physics (1903) and Chemistry (1911) and remains the only person to achieve this." },
+  { category: "History", fact: "The Great Fire of London in 1666 destroyed 13,200 houses but killed <em>very few people</em>.", detail: "Only 6 confirmed deaths were recorded, though actual casualties may have been higher." },
+  { category: "History", fact: "During World War II, the US military trained <em>bats to carry tiny incendiary bombs</em>.", detail: "The 'bat bomb' project was tested but abandoned when nuclear weapons became available." },
+  { category: "History", fact: "A woman named <em>Jeanne Calment</em> lived to be 122 years and 164 days — the oldest verified human ever.", detail: "She outlived her daughter and grandson, smoked until 117, and rode a bicycle until 100." },
+  { category: "History", fact: "During Prohibition, the US government <em>poisoned industrial alcohol</em> to deter drinking.", detail: "At least 10,000 people died from drinking the government-tainted alcohol between 1926 and 1933." },
+  { category: "History", fact: "The Black Death killed an estimated <em>30–60% of Europe's entire population</em> in the 14th century.", detail: "It took Europe roughly 200 years to recover its pre-plague population levels." },
+  { category: "History", fact: "The construction of Stonehenge required moving stones <em>200 miles</em> from Wales.", detail: "How prehistoric people transported 4-ton bluestones remains a subject of active research." },
+  { category: "History", fact: "The first crossword puzzle was published in the <em>New York World</em> newspaper in 1913.", detail: "Arthur Wynne invented it as a 'Word-Cross' puzzle for the Christmas edition." },
+  { category: "History", fact: "Isaac Newton invented the <em>cat flap</em>.", detail: "He is said to have cut a hole in his door and a smaller one for her kittens to avoid interruptions." },
+  { category: "History", fact: "The Taj Mahal took <em>22 years and 20,000 workers</em> to complete.", detail: "It was built by Mughal Emperor Shah Jahan as a mausoleum for his wife Mumtaz Mahal." },
+  { category: "History", fact: "Ancient Sumerians brewed <em>beer</em> over 5,000 years ago — and paid workers in it.", detail: "The world's oldest recipe is a beer recipe inscribed on a 3,900-year-old Sumerian tablet." },
+  { category: "History", fact: "The first ever speeding fine was issued in <em>1896</em> — for driving at 8 mph.", detail: "Walter Arnold of Kent exceeded the 2 mph speed limit through a village and was caught by a policeman on a bicycle." },
+  { category: "History", fact: "Cleopatra spoke <em>nine languages</em> and was the first Ptolemaic ruler to speak Egyptian.", detail: "Previous Ptolemaic rulers communicated with Egyptians through translators." },
+  { category: "History", fact: "The first photograph ever taken required an <em>8-hour exposure</em> and was taken in 1826.", detail: "Joseph Nicephore Niepce captured a view from an upstairs window in Burgundy, France." },
+  { category: "History", fact: "Ancient Romans had <em>vending machines</em> — coin-operated devices dispensed holy water in temples.", detail: "Hero of Alexandria invented the first coin-operated machine around 50 AD." },
+  { category: "History", fact: "Charles Dickens walked up to <em>30 miles a night</em> through London when he had insomnia.", detail: "His nocturnal walks deeply informed the gritty urban settings in his novels." },
+  { category: "History", fact: "The word 'assassin' derives from the Arabic <em>'hashishin'</em> — allegedly users of hashish.", detail: "The Assassins were a medieval Ismaili sect known for targeted killings of political enemies." },
+  { category: "History", fact: "The first novel ever written is considered to be <em>The Tale of Genji</em>, written around 1000 AD.", detail: "It was written by Murasaki Shikibu, a Japanese noblewoman — one of the earliest known female authors." },
+  { category: "History", fact: "Winston Churchill was awarded the <em>Nobel Prize in Literature</em> — not Peace.", detail: "He won in 1953 for his historical writing and speeches, which were considered literary masterworks." },
+  { category: "Science", fact: "The human brain uses about <em>20% of the body's total energy</em> despite being only 2% of body weight.", detail: "It consumes roughly 11 calories per hour just to maintain basic function." },
+  { category: "Science", fact: "Water can boil and freeze at the <em>same time</em> — this is called the 'triple point'.", detail: "At exactly 273.16 K and 611.7 Pa, all three phases of water exist simultaneously." },
+  { category: "Science", fact: "Sound travels <em>4 times faster through water</em> than through air.", detail: "Water's higher density transmits pressure waves more efficiently than gas." },
+  { category: "Science", fact: "The smell of rain has a name — <em>petrichor</em> — and comes from bacteria in the soil.", detail: "The bacterium Streptomyces releases geosmin, which humans can detect at incredibly low concentrations." },
+  { category: "Science", fact: "Humans share about <em>60% of DNA</em> with bananas.", detail: "All life on Earth shares common ancestry, and fundamental genetic machinery is highly conserved." },
+  { category: "Science", fact: "A single teaspoon of soil contains more microorganisms than there are <em>people on Earth</em>.", detail: "One gram of healthy soil can host billions of bacteria from thousands of species." },
+  { category: "Science", fact: "Oxygen didn't exist in Earth's atmosphere for the first <em>2 billion years</em> of our planet's life.", detail: "The Great Oxidation Event ~2.4 billion years ago fundamentally changed all life on Earth." },
+  { category: "Science", fact: "Helium was discovered on the <em>Sun</em> before it was found on Earth.", detail: "Spectroscopic analysis of sunlight revealed an unknown element in 1868 — named after Helios, the Sun god." },
+  { category: "Science", fact: "Graphene is a single layer of carbon just one atom thick — and it's <em>200 times stronger than steel</em>.", detail: "It was first isolated in 2004 using nothing more than scotch tape." },
+  { category: "Science", fact: "Quantum entanglement allows two particles to be correlated <em>instantly across any distance</em>.", detail: "Einstein called it 'spooky action at a distance' — but it's been experimentally verified." },
+  { category: "Science", fact: "The element mercury is the only <em>metal that's liquid at room temperature</em>.", detail: "Gallium melts just above room temperature at 29.8 degrees C, becoming liquid in your hand." },
+  { category: "Science", fact: "Nuclear fusion powers the Sun — and scientists have been trying to <em>replicate it on Earth</em> for 70 years.", detail: "In 2022, the National Ignition Facility achieved ignition for the first time, producing more energy than input." },
+  { category: "Science", fact: "There's a fungus called Ophiocordyceps that <em>controls ant behavior</em> like a parasite.", detail: "Infected ants climb to a precise height and bite a leaf before dying, positioning the fungus to spread spores." },
+  { category: "Science", fact: "The double helix structure of DNA was discovered in <em>1953</em> by Watson, Crick, and Franklin.", detail: "Rosalind Franklin's X-ray crystallography images were crucial to the discovery, though she received less credit at the time." },
+  { category: "Science", fact: "A human hair is about <em>70,000 nanometers</em> wide.", detail: "A single strand of DNA is only about 2.5 nanometers wide — 28,000 times thinner." },
+  { category: "Science", fact: "The most precise clock ever built would lose or gain less than <em>one second in 15 billion years</em>.", detail: "Optical lattice clocks use lasers to trap atoms in a grid and measure their vibrations." },
+  { category: "Science", fact: "Plants can detect and respond to <em>sound vibrations</em>.", detail: "Studies show some plants grow toward the sound of running water and respond to specific frequencies." },
+  { category: "Science", fact: "There are more atoms in a single grain of sand than there are <em>grains of sand on all Earth's beaches</em>.", detail: "A grain of sand contains roughly 10^19 atoms — beach sand estimates are around 7.5 x 10^18 grains." },
+  { category: "Science", fact: "Raindrops are not teardrop-shaped — they're actually shaped like a <em>hamburger bun</em>.", detail: "Surface tension makes them roughly spherical at first; air resistance flattens the bottom." },
+  { category: "Science", fact: "Magnetic north and geographic north are <em>not the same point</em>.", detail: "Magnetic north wanders over time — it's currently moving toward Siberia at about 55 km per year." },
+  { category: "Science", fact: "CRISPR gene editing was discovered by studying how <em>bacteria fight viruses</em>.", detail: "Bacteria store viral DNA sequences as a natural immune memory system." },
+  { category: "Science", fact: "The speed of gravity and the speed of light are <em>identical</em> — experimentally confirmed.", detail: "The detection of gravitational waves from neutron star merger GW170817 proved this." },
+  { category: "Science", fact: "Bees navigate using a <em>mental map</em> and can locate flowers up to 5 km from the hive.", detail: "Their waggle dance communicates the exact direction and distance of food sources to hivemates." },
+  { category: "Science", fact: "There are more possible iterations of a <em>Rubik's Cube</em> than there are atoms in the Earth.", detail: "A standard 3x3 cube has 43 quintillion possible configurations." },
+  { category: "Science", fact: "Honeybees make decisions collectively through a <em>democratic voting process</em>.", detail: "Scout bees perform waggle dances to campaign for different nest sites until a quorum is reached." },
+  { category: "Science", fact: "The butterfly effect describes how a small change can cause <em>large-scale unpredictable outcomes</em>.", detail: "It's a concept in chaos theory, formally described by mathematician Edward Lorenz in 1963." },
+  { category: "Nature", fact: "The Amazon rainforest produces <em>20% of the world's oxygen</em>.", detail: "It's sometimes called the 'lungs of the Earth,' though the oceans produce more oxygen overall." },
+  { category: "Nature", fact: "A single mature oak tree can support over <em>500 species</em> of insects, birds, and mammals.", detail: "Oak trees are ecological keystones — removing one has outsized effects on local biodiversity." },
+  { category: "Nature", fact: "Coral reefs cover less than 1% of the ocean floor but support about <em>25% of all marine species</em>.", detail: "They're sometimes called the 'rainforests of the sea.'" },
+  { category: "Nature", fact: "The Great Barrier Reef is the largest living structure on Earth and is <em>visible from space</em>.", detail: "It stretches over 2,300 km and hosts over 1,500 species of fish." },
+  { category: "Nature", fact: "Some trees communicate danger to neighboring trees through <em>chemical signals in the air</em>.", detail: "When attacked by insects, acacia trees release ethylene gas to warn nearby trees to produce bitter tannins." },
+  { category: "Nature", fact: "The oldest living organism on Earth is a <em>bristlecone pine tree</em> in California, over 5,000 years old.", detail: "Named Methuselah, its exact location is kept secret to protect it." },
+  { category: "Nature", fact: "Mount Everest grows about <em>4 mm taller</em> every year due to tectonic uplift.", detail: "The Indian subcontinent is still slowly colliding with Asia, pushing the Himalayas higher." },
+  { category: "Nature", fact: "The Pacific Ocean is larger than all of Earth's <em>landmasses combined</em>.", detail: "It covers about 165 million km2 — more area than all continents put together." },
+  { category: "Nature", fact: "The Sahara Desert was once a <em>lush green savanna</em> with lakes, hippos, and human settlements.", detail: "This 'Green Sahara' period ended around 5,000 years ago due to shifts in Earth's orbital cycle." },
+  { category: "Nature", fact: "Glaciers store about <em>69% of the world's fresh water</em>.", detail: "If all glaciers melted, sea levels would rise by roughly 70 meters, flooding most coastal cities." },
+  { category: "Nature", fact: "Fireflies produce light through a chemical reaction that is nearly <em>100% efficient</em>.", detail: "Almost no energy is lost as heat — compare to incandescent bulbs that waste 90% as heat." },
+  { category: "Nature", fact: "The dragonfly has a <em>95% hunting success rate</em> — the highest of any predator on Earth.", detail: "They predict the trajectory of prey and intercept it, catching targets in mid-air." },
+  { category: "Nature", fact: "Some species of bamboo flower only <em>once every 120 years</em> — and then die.", detail: "All plants of the same species flower simultaneously, wherever they are in the world." },
+  { category: "Nature", fact: "The world's largest cave — <em>Son Doong in Vietnam</em> — has its own weather system and jungle inside.", detail: "It's so large it could fit a New York City block of skyscrapers within it." },
+  { category: "Nature", fact: "The Atacama Desert in Chile is one of the driest places on Earth — some areas have had <em>no rain in 400 years</em>.", detail: "Despite this, the desert blooms every 5–7 years when El Nino brings brief rainfall." },
+  { category: "Nature", fact: "Fireflies synchronize their flashing — entire forests of them can pulse <em>in perfect unison</em>.", detail: "This synchronous flashing occurs in a few species, most famously in the Great Smoky Mountains." },
+  { category: "Nature", fact: "Seagrass meadows can <em>sequester carbon</em> up to 35 times faster than tropical rainforests.", detail: "Despite covering less than 0.2% of the ocean, they store 10% of the ocean's annual carbon." },
+  { category: "Nature", fact: "The world's largest flower — <em>Rafflesia arnoldii</em> — smells like rotting flesh.", detail: "It can grow up to 1 metre across and produces no leaves, stems, or roots — it's a parasite." },
+  { category: "Nature", fact: "Lightning strikes the Earth about <em>100 times per second</em> — over 8 million times per day.", detail: "Each bolt carries about one billion volts of electricity." },
+  { category: "Nature", fact: "The deepest point on Earth is Challenger Deep in the Mariana Trench — about <em>11 km below sea level</em>.", detail: "That's deeper than Mount Everest is tall." },
+  { category: "Nature", fact: "The tallest tree ever recorded was a <em>coast redwood</em> named Hyperion at 115.9 meters.", detail: "It was discovered in California in 2006 and its exact location is kept secret." },
+  { category: "Nature", fact: "Antarctica receives so little precipitation that it technically qualifies as the world's <em>driest desert</em>.", detail: "The interior averages just 50–100 mm of precipitation per year — less than the Sahara." },
+  { category: "Nature", fact: "The largest organism on Earth is a <em>honey fungus</em> in Oregon's Blue Mountains.", detail: "It covers over 2,385 acres underground — an estimated 8,000 years old." },
+  { category: "Nature", fact: "The Venus flytrap can count — it only snaps shut after an insect touches trigger hairs <em>twice</em>.", detail: "A third touch within 30 seconds triggers digestive juices, so the plant knows it has live prey." },
+  { category: "Human Body", fact: "Your skin replaces itself completely <em>every 2 to 4 weeks</em>.", detail: "You shed about 30,000 to 40,000 dead skin cells every hour." },
+  { category: "Human Body", fact: "Humans are the only animals with a <em>chin</em>.", detail: "No other species has a protruding mental protuberance — its evolutionary purpose is still debated." },
+  { category: "Human Body", fact: "The human liver can <em>regenerate itself</em> from as little as 25% of its original tissue.", detail: "This is why partial liver transplants from living donors are possible." },
+  { category: "Human Body", fact: "Humans are <em>bioluminescent</em> — we emit a very faint visible light.", detail: "This glow is 1,000 times too weak to see with the naked eye but has been detected by sensitive cameras." },
+  { category: "Human Body", fact: "The brain can't feel <em>pain itself</em> — only structures surrounding it can.", detail: "This is why brain surgeries can be performed while patients are awake." },
+  { category: "Human Body", fact: "Your blood vessels, if laid end to end, would wrap around the <em>Earth twice</em>.", detail: "The adult human body contains about 100,000 km of blood vessels." },
+  { category: "Human Body", fact: "The human body produces about <em>25 million new cells per second</em>.", detail: "That's about 200 billion new red blood cells every single day." },
+  { category: "Human Body", fact: "Humans are among the best <em>long-distance runners</em> in the animal kingdom.", detail: "Persistence hunting — chasing prey until it overheats — was likely key to early human survival." },
+  { category: "Human Body", fact: "The human eye can detect a single <em>photon of light</em> in perfect darkness.", detail: "The retina's rod cells are sensitive enough to respond to individual light particles." },
+  { category: "Human Body", fact: "Babies are born with about <em>270 bones</em>; adults have only 206.", detail: "Many bones fuse together during childhood and early adulthood." },
+  { category: "Human Body", fact: "Laughing uses up to <em>15 facial muscles</em> and can burn calories.", detail: "A good belly laugh raises heart rate and oxygen intake similarly to light exercise." },
+  { category: "Human Body", fact: "The appendix isn't useless — it may serve as a <em>reservoir for beneficial gut bacteria</em>.", detail: "After illness clears the gut, the appendix may help repopulate it with healthy microbes." },
+  { category: "Human Body", fact: "When you blush, the lining of your <em>stomach also turns red</em>.", detail: "Blushing is caused by adrenaline expanding blood vessels — the effect isn't limited to the face." },
+  { category: "Human Body", fact: "A human sneeze can travel at over <em>100 mph</em> and project particles 5 metres.", detail: "The mist cloud from a sneeze can linger in the air for up to 10 minutes." },
+  { category: "Human Body", fact: "Your ears never stop hearing even when you're <em>asleep</em> — your brain just filters the sounds.", detail: "This is why your name being called can wake you from deep sleep." },
+  { category: "Human Body", fact: "The average human produces about <em>1–2 liters of saliva</em> per day.", detail: "Over a lifetime that's roughly 25,000 liters — enough to fill two large swimming pools." },
+  { category: "Human Body", fact: "There are <em>no muscles</em> in your fingers — they're moved entirely by tendons connected to forearm muscles.", detail: "This is why squeezing the forearm of someone writing causes their hand to move." },
+  { category: "Human Body", fact: "Humans are the only animals that <em>blush</em>.", detail: "Charles Darwin called it 'the most peculiar and most human of all expressions.'" },
+  { category: "Human Body", fact: "Your body replaces every atom it contains over a period of <em>7 to 10 years</em>.", detail: "Different tissues renew at different rates — bone takes about 10 years, red blood cells just 4 months." },
+  { category: "Human Body", fact: "The average human heart beats about <em>3 billion times</em> in a lifetime.", detail: "It pumps roughly 200 million litres of blood over 70 years — enough to fill 80 Olympic swimming pools." },
+  { category: "Human Body", fact: "The human body can survive without food for weeks but without <em>sleep for only 11 days</em>.", detail: "Randy Gardner set the record in 1964 under medical supervision, experiencing hallucinations by day 4." },
+  { category: "Human Body", fact: "The surface area of human <em>lungs</em> is roughly equal to a tennis court.", detail: "The 300 million alveoli in each lung maximize the surface area available for gas exchange." },
+  { category: "Human Body", fact: "Your brain generates about <em>23 watts of power</em> when you're awake.", detail: "That's enough to power a small LED bulb." },
+  { category: "Food", fact: "Pineapples take <em>two years</em> to grow from plant to fruit.", detail: "Each pineapple plant typically produces only two fruits in its lifetime." },
+  { category: "Food", fact: "Vanilla is the <em>second most expensive spice</em> in the world after saffron.", detail: "The vanilla orchid can only be pollinated by specific bees in Mexico; elsewhere it's done by hand." },
+  { category: "Food", fact: "Peanuts are not nuts — they are <em>legumes</em>, more closely related to beans and lentils.", detail: "They grow underground by burying their fertilized flowers in the soil." },
+  { category: "Food", fact: "Ketchup was sold in the 1800s as a <em>medicine</em> to treat liver and indigestion problems.", detail: "It was marketed as 'tomato extract' and prescribed by doctors." },
+  { category: "Food", fact: "Almonds are actually <em>seeds of stone fruits</em>, closely related to peaches and plums.", detail: "They belong to the Prunus genus — the same as cherries, apricots, and nectarines." },
+  { category: "Food", fact: "Worcestershire sauce contains <em>anchovies</em> — making it technically not vegetarian.", detail: "The original recipe from 1837 was created by accident when a barrel of fermented fish mixture was forgotten." },
+  { category: "Food", fact: "Figs contain the <em>remains of wasps</em> that crawled inside to pollinate them.", detail: "The fig absorbs the wasp entirely; an enzyme called ficin breaks down the wasp's body." },
+  { category: "Food", fact: "Lobsters were once considered food for the <em>poor and imprisoned</em> in colonial America.", detail: "Servants in Massachusetts reportedly negotiated contracts specifying they wouldn't be fed lobster more than three times a week." },
+  { category: "Food", fact: "Potatoes were the first vegetable grown in <em>space</em>, aboard the Space Shuttle Columbia in 1995.", detail: "NASA developed the technique to study food production for long-duration space missions." },
+  { category: "Food", fact: "The Aztecs mixed <em>chili peppers and chocolate</em> together — the original combination that inspired modern mole sauce.", detail: "Cacao was so sacred that drinking chocolate was reserved for warriors and rulers." },
+  { category: "Food", fact: "A raw almond you buy in the US <em>has been pasteurized</em> — truly raw almonds aren't legally sold there.", detail: "California, which grows 80% of the world's almonds, mandated pasteurization in 2007." },
+  { category: "Food", fact: "Tomatoes are technically a <em>fruit</em>, but the US Supreme Court ruled them a vegetable in 1893 for tariff purposes.", detail: "The case was Nix v. Hedden — decided entirely on culinary rather than botanical grounds." },
+  { category: "Food", fact: "Wasabi served at most sushi restaurants outside Japan is actually <em>dyed horseradish</em>.", detail: "Real wasabi is expensive, perishable, and must be freshly grated to retain its flavor." },
+  { category: "Food", fact: "Ripe cranberries <em>bounce like rubber balls</em> — this is used to sort the good from the bad.", detail: "The bounce test was discovered in 1880 by John J. White, who noticed damaged berries didn't bounce." },
+  { category: "Food", fact: "An avocado contains a large seed because it <em>co-evolved with megafauna</em> like mammoths that spread it.", detail: "With those animals extinct, the avocado should logically have gone extinct too — but humans saved it." },
+  { category: "Food", fact: "Durian — the world's smelliest fruit — smells so bad it's <em>banned on public transport</em> across Southeast Asia.", detail: "Despite its odor, it's prized for its custardy texture and complex sweet flavor." },
+  { category: "Food", fact: "The popular spice turmeric has been used in cooking and medicine for over <em>4,000 years</em>.", detail: "Its active compound, curcumin, is being researched for anti-inflammatory and anti-cancer properties." },
+  { category: "Food", fact: "White chocolate contains no <em>cocoa solids</em> at all.", detail: "It's made from cocoa butter, sugar, and milk powder — which is why some argue it isn't really chocolate." },
+  { category: "Food", fact: "Cacao trees can only be pollinated by a <em>tiny midge</em> fly — not bees.", detail: "This is why chocolate production is so vulnerable to environmental disruption." },
+  { category: "Food", fact: "Champagne bubbles start from <em>microscopic dust particles</em> inside the glass.", detail: "Without nucleation points, champagne would simply go flat rather than release cascading bubbles." },
+  { category: "Food", fact: "The Granny Smith apple was discovered growing by accident from a <em>discarded core</em> in Australia in 1868.", detail: "Maria Ann 'Granny' Smith found the seedling and cultivated it into the now-worldwide variety." },
+  { category: "Food", fact: "The flavor compound in artificial <em>banana candy</em> is based on the Gros Michel variety, which nearly went extinct.", detail: "Panama disease wiped out the Gros Michel in the 1950s; today we eat the Cavendish instead." },
+  { category: "Food", fact: "Chewing gum was invented by the <em>Maya</em> over 2,000 years ago from chicle tree sap.", detail: "It was used for cleaning teeth and reducing hunger during long journeys." },
+  { category: "Geography", fact: "There is a place in the USA called <em>Nothing, Arizona</em>.", detail: "It's an unincorporated community with a population of around four people." },
+  { category: "Geography", fact: "The border between Belgium and the Netherlands runs <em>through a building</em> in the town of Baarle-Nassau.", detail: "Some houses are split between the two countries — residents step between nations when crossing rooms." },
+  { category: "Geography", fact: "Alaska is simultaneously the <em>westernmost and easternmost</em> state in the US.", detail: "The Aleutian Islands cross the 180 degree meridian, putting some US territory in the eastern hemisphere." },
+  { category: "Geography", fact: "Istanbul is the only city in the world that spans <em>two continents</em>.", detail: "The city straddles Europe and Asia across the Bosphorus strait." },
+  { category: "Geography", fact: "The Dead Sea is so salty you can <em>float effortlessly</em> on its surface.", detail: "Its salinity is about 34% — nearly 10 times saltier than typical ocean water." },
+  { category: "Geography", fact: "New Zealand was the last major landmass colonized by humans — Maori arrived only about <em>700 years ago</em>.", detail: "It was one of the last significant habitable land areas on Earth to remain uninhabited." },
+  { category: "Geography", fact: "Brazil is named after a <em>tree</em> — the brazilwood tree, pau-brasil.", detail: "Portuguese traders extracted a red dye from it that was highly valuable in Europe." },
+  { category: "Geography", fact: "The world's largest desert is <em>Antarctica</em>, not the Sahara.", detail: "A desert is defined by low precipitation — Antarctica receives less than 200mm per year." },
+  { category: "Geography", fact: "Sweden has more <em>islands</em> than any other country — over 220,000.", detail: "Only about 1,000 are inhabited. Many are uninhabited rocks in the Baltic archipelago." },
+  { category: "Geography", fact: "The Sahara and the Amazon take turns <em>fertilizing each other</em>.", detail: "Winds carry millions of tonnes of Saharan dust across the Atlantic each year, enriching the Amazon's soil." },
+  { category: "Geography", fact: "Lake Baikal in Russia contains about <em>20% of the world's unfrozen fresh surface water</em>.", detail: "It's the world's deepest lake at 1,642 m and the oldest at about 25 million years." },
+  { category: "Geography", fact: "There is a point in the ocean so remote that the nearest land is over <em>2,700 km away</em> in any direction.", detail: "Called Point Nemo, it's so isolated that the ISS is sometimes the closest inhabited structure above it." },
+  { category: "Geography", fact: "The city of Venice is built on <em>118 small islands</em> connected by 400 bridges.", detail: "It was built on wooden piles driven into the lagoon floor — and is slowly sinking." },
+  { category: "Geography", fact: "Norway has a coastline longer than the distance to the <em>Moon</em>.", detail: "When fjords and inlets are included, Norway's coastline measures about 100,000 km." },
+  { category: "Geography", fact: "There is no land under the <em>North Pole</em> — it's entirely sea ice floating over the Arctic Ocean.", detail: "Unlike Antarctica, which has a continent beneath the ice, the Arctic is just frozen ocean." },
+  { category: "Geography", fact: "Papua New Guinea has over <em>800 languages</em> — more than any other country.", detail: "It represents about 12% of all known languages, spoken by a population of just 9 million." },
+  { category: "Geography", fact: "The world's longest railway line — the Trans-Siberian — stretches nearly <em>10,000 km</em> across Russia.", detail: "The full journey from Moscow to Vladivostok takes about 7 days." },
+  { category: "Geography", fact: "Monaco has a higher population density than <em>any country on Earth</em>.", detail: "About 38,000 people live in just 2.1 km2 — over 18,000 people per km2." },
+  { category: "Geography", fact: "Hawaii is the only US state that <em>grows coffee commercially</em>.", detail: "Kona coffee from the Big Island is considered among the world's finest and most expensive." },
+  { category: "Technology", fact: "The word 'robot' was first used in a <em>1920 Czech play</em> called R.U.R.", detail: "Karel Capek coined the term from the Czech word 'robota' meaning forced labor or drudgery." },
+  { category: "Technology", fact: "The first computer programmer was a <em>woman</em> — Ada Lovelace, in the 1840s.", detail: "She wrote the first algorithm intended to be processed by a machine, for Babbage's Analytical Engine." },
+  { category: "Technology", fact: "QWERTY keyboard layout was designed in the 1870s to <em>prevent typewriter jams</em>.", detail: "By separating common letter combinations, it slowed typists down slightly to prevent mechanical collision." },
+  { category: "Technology", fact: "The first text message ever sent said <em>'Merry Christmas'</em>, sent in December 1992.", detail: "Neil Papworth sent it from a computer to Vodafone director Richard Jarvis's mobile phone." },
+  { category: "Technology", fact: "The first YouTube video was uploaded on <em>April 23, 2005</em>.", detail: "It was an 18-second clip called 'Me at the zoo,' uploaded by co-founder Jawed Karim." },
+  { category: "Technology", fact: "The hashtag (#) has a formal name — the <em>octothorpe</em>.", detail: "Its origins are disputed, but the name was coined at Bell Labs in the 1960s or 70s." },
+  { category: "Technology", fact: "The original domain name for Google was <em>googol.com</em> but was misspelled when registered.", detail: "A googol is the number 1 followed by 100 zeros, reflecting the vast scale of web data." },
+  { category: "Technology", fact: "The internet uses more electricity than the entire <em>United Kingdom</em> every year.", detail: "Data centres, networking equipment, and connected devices consume enormous amounts of power globally." },
+  { category: "Technology", fact: "The first computer mouse was made from <em>wood</em>.", detail: "Doug Engelbart's 1964 prototype was a rectangular wooden block with a single button." },
+  { category: "Technology", fact: "GPS was originally built for <em>US military use</em> and only opened to civilians in 1983.", detail: "President Reagan authorized civilian access after Korean Air Lines Flight 007 was shot down due to navigation errors." },
+  { category: "Technology", fact: "Netflix started as a <em>DVD-by-mail</em> rental service in 1997.", detail: "Streaming didn't begin until 2007 — a decade after the company's founding." },
+  { category: "Technology", fact: "Bluetooth is named after <em>Harald Bluetooth</em>, a 10th-century Danish king.", detail: "The technology was intended to unite different communication protocols — just as Harald united Danish tribes." },
+  { category: "Technology", fact: "The world's first programmable electronic computer, <em>ENIAC</em>, weighed 30 tonnes and filled an entire room.", detail: "It was completed in 1945 and could perform 5,000 additions per second — less than a modern calculator." },
+  { category: "Technology", fact: "Wi-Fi was partially enabled by technology developed to detect <em>evaporating black holes</em>.", detail: "CSIRO's radio astronomy research led to error-correction techniques now used in wireless networking." },
+  { category: "Technology", fact: "The first website is still <em>live today</em> at info.cern.ch.", detail: "Tim Berners-Lee published it in 1991; it explains what the World Wide Web is." },
+  { category: "Technology", fact: "Nintendo was founded in <em>1889</em> — originally as a playing card company.", detail: "It made handmade hanafuda cards before pivoting to electronic toys nearly a century later." },
+  { category: "Technology", fact: "The average smartphone contains <em>gold, silver, platinum, and rare earth metals</em>.", detail: "About 30 different minerals go into a modern smartphone — many sourced from conflict zones." },
+  { category: "Psychology", fact: "The <em>Baader-Meinhof phenomenon</em> makes newly learned information appear everywhere.", detail: "Once you notice something new, your brain's reticular activating system heightens attention to it." },
+  { category: "Psychology", fact: "Humans are the only animals known to cry <em>emotional tears</em>.", detail: "Other animals produce tears to lubricate eyes, but emotional weeping is uniquely human." },
+  { category: "Psychology", fact: "Your brain is more active when you're <em>asleep</em> than when you're watching TV.", detail: "During REM sleep, neural activity rivals that of fully awake, engaged problem-solving." },
+  { category: "Psychology", fact: "People tend to remember the <em>beginning and end</em> of a list far better than the middle.", detail: "This is called the 'serial position effect' — comprising the primacy and recency effects." },
+  { category: "Psychology", fact: "The <em>placebo effect</em> works even when patients know they're taking a placebo.", detail: "Open-label placebo studies show measurable improvement in conditions like IBS and back pain." },
+  { category: "Psychology", fact: "Decision fatigue is real — judges grant <em>fewer paroles</em> as the day progresses.", detail: "A study of Israeli parole boards found approval rates dropped from 65% in the morning to near 0% by end of day." },
+  { category: "Psychology", fact: "Multitasking doesn't exist — the brain actually <em>rapidly switches</em> between tasks.", detail: "True simultaneous processing of two cognitive tasks isn't possible; switching reduces performance on both." },
+  { category: "Psychology", fact: "People are more creative in the <em>early afternoon slump</em> when analytical thinking is weakest.", detail: "Inhibitory control relaxes when tired, allowing more unusual associations to surface." },
+  { category: "Psychology", fact: "The <em>'doorway effect'</em> explains why walking through a doorway causes you to forget what you were doing.", detail: "The brain files memories by location — entering a new room creates a new mental context." },
+  { category: "Mathematics", fact: "There are more possible iterations of a game of chess than there are <em>atoms in the observable universe</em>.", detail: "The number of possible chess games is estimated at around 10^120 — the 'Shannon Number'." },
+  { category: "Mathematics", fact: "There are more possible ways to arrange a deck of cards than there have been <em>seconds since the Big Bang</em>.", detail: "52 factorial (52!) is roughly 8 x 10^67 — an astronomically large number." },
+  { category: "Mathematics", fact: "The number Pi has been calculated to over <em>100 trillion decimal places</em> and never repeats.", detail: "Its digits appear to be statistically random with no discernible pattern." },
+  { category: "Mathematics", fact: "In a room of just 23 people, there's a <em>50% chance two share a birthday</em>.", detail: "This counterintuitive result is called the Birthday Problem in probability theory." },
+  { category: "Mathematics", fact: "Benford's Law states that in naturally occurring data, the leading digit is more likely to be <em>1 than 9</em>.", detail: "The number 1 appears as the first digit about 30% of the time in datasets ranging from populations to stock prices." },
+  { category: "Mathematics", fact: "There are exactly <em>177,147 ways</em> to tie a necktie.", detail: "Thomas Fink and Yong Mao at Cambridge calculated all topologically distinct knots using formal notation." },
+  { category: "Linguistics", fact: "The word 'set' has more definitions in the English dictionary than <em>any other word</em>.", detail: "The Oxford English Dictionary lists over 430 definitions for 'set.'" },
+  { category: "Linguistics", fact: "There is a language in Turkey — <em>Silbo Gomero</em> — that is entirely whistled.", detail: "The whistled language of La Gomera in the Canary Islands can carry messages over 2 miles." },
+  { category: "Linguistics", fact: "The sentence <em>'I never said she stole my money'</em> has 7 different meanings depending on which word is stressed.", detail: "This illustrates how tone and emphasis can completely change communication." },
+  { category: "Linguistics", fact: "There are over <em>7,000 languages</em> spoken in the world today.", detail: "About 40% of them are endangered, spoken by fewer than 1,000 people." },
+  { category: "Linguistics", fact: "There is a word in Japanese — <em>'tsundoku'</em> — for buying books and never reading them.", detail: "Many languages have precise single words for concepts English needs a whole phrase to describe." },
+  { category: "Linguistics", fact: "Sign languages are <em>not universal</em> — each country has its own.", detail: "American Sign Language (ASL) is completely different from British Sign Language (BSL), for example." },
+  { category: "Art & Music", fact: "Beethoven was <em>almost entirely deaf</em> when he composed his 9th Symphony.", detail: "He reportedly cut the legs off his piano to feel vibrations through the floor while composing." },
+  { category: "Art & Music", fact: "The Mona Lisa has <em>no eyebrows</em> — it was fashionable to shave them in 15th-century Florence.", detail: "High foreheads and bare brows were considered signs of high intelligence and beauty." },
+  { category: "Art & Music", fact: "Mozart composed his first symphony at age <em>eight</em>.", detail: "He had written over 600 works, including 41 symphonies, before his death at 35." },
+  { category: "Art & Music", fact: "The world's oldest known musical instrument is a <em>vulture bone flute</em> over 40,000 years old.", detail: "It was found in the Hohle Fels cave in Germany and predates agriculture." },
+  { category: "Art & Music", fact: "The Sistine Chapel ceiling took Michelangelo only <em>4 years</em> to paint — from 1508 to 1512.", detail: "He painted it while lying on scaffolding above his head, permanently damaging his posture and eyesight." },
+  { category: "Economics", fact: "The average lifespan of a <em>dollar bill</em> is about 6 years before it's shredded.", detail: "Higher-denomination bills last longer because they circulate less frequently." },
+  { category: "Economics", fact: "The world's first stock exchange was established in <em>Amsterdam in 1602</em>.", detail: "The Dutch East India Company issued the first-ever shares of stock to fund its global trade operations." },
+  { category: "Economics", fact: "Iceland recovered from its 2008 financial crisis faster than most countries by <em>prosecuting bankers</em>.", detail: "26 bankers were jailed — a unique approach compared to other countries' bailout strategies." },
+  { category: "Economics", fact: "The US has more <em>self-storage facilities</em> than McDonald's, Starbucks, and Walmart combined.", detail: "Americans collectively rent about 1.9 billion square feet of storage space." },
+];
+
+// Shuffle array
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+let facts = shuffle([...ALL_FACTS]);
+let currentIndex = 0;
+let progressTimer = null;
+let nextTimer = null;
+let nextCountdown = DISPLAY_DURATION / 1000;
+
+// Clock
+function updateClock() {
+  const now = new Date();
+  const h = now.getHours().toString().padStart(2, '0');
+  const m = now.getMinutes().toString().padStart(2, '0');
+  document.getElementById('clock').textContent = `${h}:${m}`;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// Render a single fact
+function renderFact(fact, index) {
+  const card = document.getElementById('factCard');
+  document.getElementById('factCounter').textContent = `Fact ${index + 1} of ${facts.length}`;
+  card.innerHTML = `
+    <div class="fact-number">${String(index + 1).padStart(2, '0')}</div>
+    <div class="fact-category">${fact.category}</div>
+    <p class="fact-text">${fact.fact}</p>
+    <div class="fact-divider"></div>
+    <p class="fact-trivia">${fact.detail}</p>
+  `;
+}
+
+// Animate progress bar
+function startProgress(duration) {
+  const bar = document.getElementById('progressBar');
+  bar.style.transition = 'none';
+  bar.style.width = '0%';
+  bar.getBoundingClientRect();
+  bar.style.transition = `width ${duration}ms linear`;
+  bar.style.width = '100%';
+}
+
+// Countdown
+function formatCountdown(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return m > 0 ? `${m}m ${s.toString().padStart(2,'0')}s` : `${s}s`;
+}
+
+function startCountdown(seconds) {
+  nextCountdown = seconds;
+  document.getElementById('nextIn').textContent = formatCountdown(seconds);
+  if (nextTimer) clearInterval(nextTimer);
+  nextTimer = setInterval(() => {
+    nextCountdown--;
+    document.getElementById('nextIn').textContent = formatCountdown(Math.max(0, nextCountdown));
+  }, 1000);
+}
+
+// Transition & show fact
+async function showFact(index) {
+  currentIndex = index;
+  const overlay = document.getElementById('overlay');
+  overlay.classList.add('active');
+  await sleep(500);
+
+  // If we've cycled through all, reshuffle
+  if (index === 0 && currentIndex === 0 && facts.length === ALL_FACTS.length) {
+    facts = shuffle([...ALL_FACTS]);
+  }
+
+  renderFact(facts[index], index);
+  startProgress(DISPLAY_DURATION);
+  startCountdown(DISPLAY_DURATION / 1000);
+  overlay.classList.remove('active');
+
+  if (progressTimer) clearTimeout(progressTimer);
+  progressTimer = setTimeout(() => {
+    const next = (index + 1) % facts.length;
+    showFact(next === 0 ? 0 : next);
+    if (next === 0) facts = shuffle([...ALL_FACTS]);
+  }, DISPLAY_DURATION);
+}
+
+function sleep(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
+
+// Start immediately
+showFact(0);
+
+// Navigation buttons
+document.getElementById('nextBtn').addEventListener('click', () => {
+  clearTimeout(progressTimer);
+  clearInterval(nextTimer);
+  const next = (currentIndex + 1) % facts.length;
+  if (next === 0) facts = shuffle([...ALL_FACTS]);
+  showFact(next);
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+  clearTimeout(progressTimer);
+  clearInterval(nextTimer);
+  const prev = (currentIndex - 1 + facts.length) % facts.length;
+  showFact(prev);
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+  if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+});
+</script>
+</body>
+</html>
