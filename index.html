@@ -1327,7 +1327,14 @@ const ALL_FACTS = [
 ];
 
 let facts = ALL_FACTS;
-let currentIndex = 0;
+
+// Time-based starting index — uses a fixed epoch so position never resets.
+// Cycles through all facts continuously regardless of page reloads or incognito.
+const EPOCH = new Date('2024-01-01T00:00:00').getTime();
+const msElapsedInSlot = (Date.now() - EPOCH) % DISPLAY_DURATION;
+const msRemainingInSlot = DISPLAY_DURATION - msElapsedInSlot;
+const startIndex = Math.floor((Date.now() - EPOCH) / DISPLAY_DURATION) % facts.length;
+let currentIndex = startIndex;
 let progressTimer = null;
 let nextTimer = null;
 let nextCountdown = DISPLAY_DURATION / 1000;
@@ -1382,31 +1389,31 @@ function startCountdown(seconds) {
   }, 1000);
 }
 
-// Transition & show fact
-async function showFact(index) {
+// Transition & show fact. duration defaults to full DISPLAY_DURATION.
+async function showFact(index, duration = DISPLAY_DURATION) {
   currentIndex = index;
   const overlay = document.getElementById('overlay');
   overlay.classList.add('active');
   await sleep(500);
 
   renderFact(facts[index], index);
-  startProgress(DISPLAY_DURATION);
-  startCountdown(DISPLAY_DURATION / 1000);
+  startProgress(duration);
+  startCountdown(Math.round(duration / 1000));
   overlay.classList.remove('active');
 
   if (progressTimer) clearTimeout(progressTimer);
   progressTimer = setTimeout(() => {
     const next = (index + 1) % facts.length;
-    showFact(next);
-  }, DISPLAY_DURATION);
+    showFact(next); // subsequent facts always get full duration
+  }, duration);
 }
 
 function sleep(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
-// Start immediately
-showFact(0);
+// Start at the time-based fact for right now, with correct remaining time in slot
+showFact(startIndex, msRemainingInSlot);
 
 // Navigation buttons
 document.getElementById('nextBtn').addEventListener('click', () => {
