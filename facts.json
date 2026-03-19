@@ -6788,5 +6788,1320 @@
     "category": "Human Body",
     "fact": "The <em>human ear</em> has three of the tiniest bones in the body — the malleus, incus, and stapes (hammer, anvil, stirrup) — that amplify and transmit sound vibrations from the eardrum to the inner ear.",
     "detail": "These three bones, collectively called the ossicles, evolved from jawbones — fossil evidence shows the transition from reptilian jaw structure to the mammalian middle ear over millions of years."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>mantis shrimp</em> can swing its club at 50 mph — fast enough to cavitate water and create a flash of light, heat, and sound that stuns or kills prey even if it misses.",
+    "detail": "The club accelerates faster than a bullet leaving a gun barrel. Researchers study it for inspiration in designing impact-resistant helmets and body armor."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Sloths</em> host entire ecosystems in their fur — algae, moths, beetles, and fungi all live among their coarse hair, giving sloths a greenish tint that helps camouflage them in trees.",
+    "detail": "The relationship is mutually beneficial: the sloth provides habitat, and the algae may provide nutrients the sloth absorbs through its skin. Some moth species found in sloth fur exist nowhere else."
+  },
+  {
+    "category": "Animals",
+    "fact": "A <em>snail</em> can sleep for up to three years — during drought conditions it seals itself inside its shell with a mucus membrane and enters a deep state of estivation.",
+    "detail": "Unlike hibernation which occurs in cold, estivation is a response to heat and dryness. Snails can survive months or even years in this state, reviving fully when moisture returns."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>archerfish</em> spits jets of water with extraordinary accuracy to knock insects off overhanging branches — and it corrects for the refraction of light at the water's surface.",
+    "detail": "Accounting for refraction requires solving an optics problem that humans need mathematics to calculate. Archerfish do it instinctively, adjusting their aim without any conscious calculation."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Ants</em> that get lost use a backup navigation system — they count their own steps to estimate distance traveled, essentially running an internal pedometer.",
+    "detail": "Scientists confirmed this by attaching tiny stilts to ants, making their steps longer, which caused them to overshoot their target by exactly the predicted amount."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>sea cucumber</em> breathes through its anus — it draws water in and out of its rear end across specialized respiratory trees inside its body.",
+    "detail": "When threatened, sea cucumbers can also eject their internal organs through their anus to distract predators. The organs regenerate within a few weeks."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Cuttlefish</em> are colorblind yet produce the most sophisticated camouflage in the animal kingdom — they may 'see' color through polarized light or through photoreceptors distributed across their skin.",
+    "detail": "They can produce flowing, animated patterns across their entire body surface in milliseconds. Each chromatophore (color cell) is individually controlled by a separate nerve, giving them pixel-level resolution."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>wood frog</em> can survive being frozen solid during winter — up to 65% of its body water freezes, its heart stops, and it stops breathing, only to thaw and hop away in spring.",
+    "detail": "Its cells produce massive amounts of glucose as a cryoprotectant, preventing ice crystals from forming inside cells. Studying this process may help develop better organ preservation methods for transplantation."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Elephants</em> are afraid of bees — beehive fences around farms in Africa have proven more effective at deterring crop raids than trenches or electric fences.",
+    "detail": "Elephants produce a specific rumble vocalization warning others about bees — the first alarm call found to refer to a specific threat category. They also show stress behaviors when they hear bee recordings."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>platypus</em> hunts entirely by electroreception underwater — it closes its eyes, ears, and nose and navigates purely by detecting the electric fields of its prey's muscles.",
+    "detail": "Its bill contains around 40,000 electroreceptors and 60,000 mechanoreceptors. It is one of only a few mammals capable of electroreception, a sense far more common in fish."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Pigeons</em> were used as stock market messengers before the telegraph — Nathan Rothschild used pigeons to learn of Napoleon's defeat at Waterloo before anyone else in London, allowing him to profit enormously.",
+    "detail": "Reuters news agency was founded in part by Paul Reuter's pigeon service that carried stock prices between Brussels and Aachen in 1850. Pigeons remained militarily useful until World War II."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>Greenland shark</em> is the world's longest-lived vertebrate — some individuals are estimated to be over 500 years old, based on carbon dating of their eye lenses.",
+    "detail": "They grow only about 1 cm per year and don't reach sexual maturity until around 150 years old. The oldest confirmed specimen was estimated at 392 years old, meaning it was born around 1627."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Starfish</em> have no blood — they use seawater pumped through a hydraulic system called the water vascular system to move their tube feet and circulate nutrients.",
+    "detail": "If the water quality changes suddenly, starfish can be fatally affected. Their remarkable regenerative ability extends to regrowing entire bodies from a single arm under the right conditions."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>African grey parrot</em> demonstrates reasoning abilities previously thought exclusive to great apes — they understand concepts of zero, statistical probability, and can solve multi-step puzzles.",
+    "detail": "Alex, a famous African grey studied for 30 years by Dr. Irene Pepperberg, had a vocabulary of over 100 words, could identify colors and shapes, and reportedly said 'I love you. Be good.' on the night before he died."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Horses</em> can read human facial expressions — they recognize happy versus angry human faces and remember which people smiled or frowned at them, adjusting their behavior accordingly.",
+    "detail": "They are one of very few non-primate species shown to recognize human emotions from facial expressions alone. Research suggests they process the left side of the face preferentially, as humans do."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>lyrebird</em> can mimic the sound of chainsaws, cameras, and car alarms so precisely that recordings fool ornithologists — but it can also mimic other birds mid-flight while maintaining its own song.",
+    "detail": "Male lyrebirds spend years perfecting their repertoire to attract females. They have been documented incorporating new industrial sounds within weeks of first exposure to them."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Photons have no age</em> — from a photon's reference frame, it is emitted and absorbed simultaneously. Time does not pass for massless particles traveling at the speed of light.",
+    "detail": "This is a consequence of special relativity. As an object's velocity approaches light speed, time dilation stretches time toward infinity. For light itself, time stops entirely."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>human body emits light</em> — biophoton emission from metabolic processes produces a faint glow about 1,000 times dimmer than the human eye can detect, strongest in the afternoon.",
+    "detail": "Japanese researchers captured this glow using ultra-sensitive cameras in 2009. The intensity fluctuates with circadian rhythms and metabolism, suggesting it reflects real-time biochemical activity."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Diamonds rain</em> on Neptune and Uranus — extreme pressure converts methane into carbon, which crystallizes into diamonds that sink toward the core as liquid diamond rain.",
+    "detail": "Laboratory experiments at Stanford in 2017 confirmed that the conditions in these planets' interiors are sufficient to produce this phenomenon. Neptune and Uranus may have literal diamond oceans at their cores."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>strongest material</em> in the world is carbyne — chains of carbon atoms one atom wide — theoretically 40 times stronger than diamond and twice as stiff.",
+    "detail": "Carbyne has never been produced in more than very short chains due to its extreme reactivity. If it could be stabilized, it would revolutionize materials science."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Water can exist in three phases simultaneously</em> at a specific temperature and pressure called the triple point — 0.01°C at 611.73 pascals, it simultaneously boils, freezes, and remains liquid.",
+    "detail": "The triple point of water is so precisely defined that it is used to calibrate thermometers. It represents the only conditions where solid, liquid, and gas water coexist in thermodynamic equilibrium."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>butterfly effect</em> was discovered using a weather model — Edward Lorenz found that rounding a number from 0.506127 to 0.506 produced a completely different weather forecast.",
+    "detail": "This tiny difference — less than 0.1% — led to utterly different outcomes. Lorenz later asked whether a butterfly flapping its wings in Brazil could set off a tornado in Texas, coining the term."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Superfluid helium</em> has zero viscosity and flows without friction — it can climb up and over the walls of its container and flow through holes far too small for any normal liquid.",
+    "detail": "At temperatures below -270.97°C, helium enters a superfluid phase governed by quantum mechanics rather than classical fluid dynamics. It conducts heat nearly perfectly and cannot be made to rotate normally."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>Mpemba effect</em> — hot water sometimes freezing faster than cold water — was named after a Tanzanian student who noticed it in 1963, though Aristotle described it 2,000 years earlier.",
+    "detail": "The effect is real but poorly understood. Proposed explanations include convection currents, dissolved gas content, and hydrogen bond network differences — no consensus explanation exists."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Glass is not a slow-moving liquid</em> — the myth that old windows are thicker at the bottom because glass flows over centuries is false. Medieval glass was simply made unevenly.",
+    "detail": "Glass is an amorphous solid — its atoms are disordered like a liquid, but it does not flow measurably on any human timescale. The viscosity of window glass at room temperature would take longer than the age of the universe to produce visible flow."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>skin of a cucumber</em> is a better electrical conductor than distilled water — many vegetables and fruits can complete circuits due to dissolved minerals and electrolytes.",
+    "detail": "This is why the cucumber-as-battery demonstration works in school science classes. The electrolytes in cellular fluid allow ion flow, creating a weak galvanic cell when two different metals are inserted."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Every atom in your body</em> was forged in a star — hydrogen and helium were made in the Big Bang, but all heavier elements were created inside stars and scattered by supernovae.",
+    "detail": "Carl Sagan's phrase 'we are made of star stuff' is literally accurate. The iron in your blood was forged in the core of a star that exploded before our solar system formed."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>Vikings</em> were not called Vikings in their own time — 'Viking' was a verb meaning 'to raid.' A man who went on a raid 'went viking.' Most Norse people were farmers, traders, and craftspeople.",
+    "detail": "The horned helmet is also a myth — it comes from a 19th century costume designer. Norse helmets were simple iron bowls with a nose guard. The horned helmet in popular culture was designed for a 1876 opera."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>Great Pyramid of Giza</em> was the world's tallest structure for 3,800 years — from its completion around 2560 BCE until Lincoln Cathedral was built in England around 1311 CE.",
+    "detail": "At 146.5 meters originally, it held the record longer than any other structure in history. The Empire State Building held its record for only 41 years, the Burj Khalifa has held it since 2010."
+  },
+  {
+    "category": "History",
+    "fact": "<em>Coca-Cola</em> originally contained cocaine — about 9 milligrams per serving of cocaine from coca leaf extract. It was removed in 1903 amid growing concerns about cocaine addiction.",
+    "detail": "The company still uses decocainized coca leaf extract for flavoring. It imports about 100 metric tons of coca leaves annually from Peru, processed by a single licensed company in New Jersey."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>Ottoman Empire</em> was so long-lived that it overlapped with the United States — it was founded around 1299 and lasted until 1922, spanning 623 years and existing simultaneously with the entire history of the USA until WWI.",
+    "detail": "At its peak it controlled territory across three continents — southeastern Europe, western Asia, and northern Africa — with Istanbul (Constantinople) as its capital for most of its existence."
+  },
+  {
+    "category": "History",
+    "fact": "<em>Prohibition</em> in the United States accidentally created organized crime — before 1920, criminal gangs were relatively local. The illegal alcohol trade created national criminal networks with enormous wealth and political influence.",
+    "detail": "Al Capone's operation in Chicago generated $60 million annually (equivalent to about $1 billion today). The infrastructure and money-laundering techniques developed during Prohibition were applied to drugs after repeal."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>1904 Olympics</em> marathon included a runner who was given rat poison as a stimulant — Thomas Hicks finished first, was disqualified, and was so delirious he needed four doctors to revive him.",
+    "detail": "The race is considered the most chaotic in Olympic history. A Cuban who finished fourth had never run a marathon before. Another runner quit the race, took a nap under a tree, and resumed to finish fourth officially."
+  },
+  {
+    "category": "History",
+    "fact": "<em>Albert Einstein</em> was offered the presidency of Israel in 1952 — he declined, saying he lacked the natural aptitude and experience for dealing with people.",
+    "detail": "Prime Minister Ben-Gurion reportedly asked an aide: 'What are we going to do if he says yes?' Einstein's letter of refusal was remarkably humble, acknowledging his limitations outside his scientific domain."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>shortest war in history</em> lasted 38–45 minutes — the Anglo-Zanzibar War of 1896, in which Britain bombarded the Sultan's palace after he refused to abdicate.",
+    "detail": "The Zanzibari forces suffered approximately 500 casualties while the British had one sailor wounded. The defeated Sultan fled to the German consulate, beginning a 19-year exile."
+  },
+  {
+    "category": "History",
+    "fact": "<em>Ancient Romans</em> used crushed mouse brains as toothpaste and urine as mouthwash — urine's ammonia content does actually clean teeth, and Roman fullers (laundry workers) used it to clean clothes too.",
+    "detail": "Public urinals were placed on streets specifically to collect urine for laundries. Emperor Vespasian taxed urine collection, leading to his son's complaint about undignified revenue — inspiring the phrase 'money has no smell.'"
+  },
+  {
+    "category": "History",
+    "fact": "The <em>word 'assassin'</em> comes from 'Hashshashin' — a medieval Islamic sect known for political murder, whose name may mean 'hashish users,' though historians debate whether they actually used it.",
+    "detail": "The Hashshashin operated from mountain fortresses in Persia and Syria from the 11th to 13th centuries, using targeted killings rather than open warfare. Their techniques influenced both European Crusaders and later intelligence agencies."
+  },
+  {
+    "category": "History",
+    "fact": "<em>Napoleon</em> was once attacked by rabbits — after the Battle of Friedland in 1807, he organized a celebratory rabbit hunt but his staff had collected domestic rabbits instead of wild ones.",
+    "detail": "Hundreds of domestic rabbits, conditioned to associate humans with food, swarmed Napoleon and his entourage. He was forced to retreat to his carriage, reportedly one of the few times he was genuinely routed."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>Eiffel Tower</em> was almost demolished — it was built in 1889 as a temporary structure for the World's Fair and was saved only because it proved useful as a radio transmission tower.",
+    "detail": "Its creator Gustave Eiffel hated it being called ugly by Parisian intellectuals who called it 'a dishonor to Paris.' It became the world's tallest structure and remained so for 41 years."
+  },
+  {
+    "category": "History",
+    "fact": "<em>Cleopatra</em> lived closer in time to the Moon landing than to the construction of the Great Pyramid of Giza.",
+    "detail": "The Great Pyramid was built around 2560 BCE, Cleopatra lived around 69–30 BCE (about 2,500 years after the pyramid), and the Moon landing was in 1969 (about 2,000 years after Cleopatra). The pyramid is that old."
+  },
+  {
+    "category": "Geography",
+    "fact": "The <em>borders of many African countries</em> are straight lines because they were drawn at the 1884–1885 Berlin Conference by European powers who divided the continent without regard for ethnic, cultural, or linguistic boundaries.",
+    "detail": "The 'Scramble for Africa' resulted in over 10,000 distinct cultural groups being divided across 50+ countries, creating artificial political units that bear little relationship to the continent's actual human geography."
+  },
+  {
+    "category": "Geography",
+    "fact": "<em>Tokyo</em> is the world's largest metropolitan area with nearly 38 million people — greater than the entire population of California, Canada, or Australia.",
+    "detail": "Despite its size, Tokyo is remarkably safe — it has one of the lowest crime rates of any major city. Its railway system carries 40 million passengers daily, more than any other city's entire public transit system."
+  },
+  {
+    "category": "Geography",
+    "fact": "The <em>Strait of Gibraltar</em> is only 14 kilometers wide at its narrowest point — yet it separates two continents, two seas, and marks one of history's most strategic maritime chokepoints.",
+    "detail": "The ancient Greeks called the rocks on either side the 'Pillars of Hercules' — the boundary of the known world. Ships passing through it today include roughly 300 vessels per day."
+  },
+  {
+    "category": "Geography",
+    "fact": "<em>The Philippines</em> has more than 7,000 islands — more than 2,000 of which are inhabited, and a significant number still have no official names on government maps.",
+    "detail": "It is one of the world's most linguistically diverse nations with 170+ languages and one of the world's most disaster-prone countries, experiencing about 20 typhoons per year on average."
+  },
+  {
+    "category": "Geography",
+    "fact": "The <em>Ural Mountains</em> in Russia are considered the dividing line between Europe and Asia — making Russia simultaneously the largest country in Europe and the largest country in Asia.",
+    "detail": "The Urals are geologically among the world's oldest mountain ranges at 250–300 million years old. They have been so heavily eroded that their highest peak is only 1,895 meters."
+  },
+  {
+    "category": "Geography",
+    "fact": "<em>New Zealand</em> was the last major landmass on Earth to be settled by humans — Polynesian navigators arrived around 1250–1300 CE, making it one of the most recent major human colonizations in history.",
+    "detail": "This late arrival is why New Zealand has such unique wildlife — its birds evolved in the absence of land mammals and many became flightless. The arrival of humans and rats caused rapid extinction of native species."
+  },
+  {
+    "category": "Geography",
+    "fact": "The <em>city of Venice</em> is built on 118 small islands connected by 400 bridges over 177 canals — and is sinking at a rate of about 1–2 mm per year while sea levels rise.",
+    "detail": "Venice has been flooding more frequently — 'acqua alta' (high water) events now occur multiple times per year compared to a few times per century historically. The MOSE flood barrier system became operational in 2020."
+  },
+  {
+    "category": "Geography",
+    "fact": "<em>Bhutan</em> measures its success in Gross National Happiness rather than GDP — the government considers citizen wellbeing, cultural preservation, and environmental sustainability as primary national goals.",
+    "detail": "This philosophy has real policy implications — Bhutan has a constitutional requirement to maintain 60% forest cover, banned tobacco sales, and prohibits satellite TV and internet to preserve traditional culture. It is also carbon-negative."
+  },
+  {
+    "category": "Food",
+    "fact": "The <em>kiwi fruit</em> is named after the kiwi bird, not the country — it was renamed from 'Chinese gooseberry' by New Zealand exporters in 1959 to make it more marketable to American consumers during the Cold War.",
+    "detail": "Kiwi fruit was originally cultivated in China for centuries. New Zealand began commercial cultivation in the 1900s. The fruit was renamed to avoid association with communist China during the Cold War trade environment."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Lobsters</em> were once so plentiful they were considered poor people's food in colonial America — servants in Massachusetts reportedly negotiated contracts limiting how often they could be served lobster.",
+    "detail": "Lobster was used as fish bait, fertilizer, and prison food. The shift to luxury status began with canning technology in the 1800s, which allowed inland transport, and was accelerated by railway dining cars."
+  },
+  {
+    "category": "Food",
+    "fact": "The <em>microwave oven</em> was invented accidentally — Percy Spencer was testing radar equipment in 1945 when a chocolate bar in his pocket melted. He then deliberately tested popcorn and eggs.",
+    "detail": "The first commercial microwave oven weighed 340 kg and cost $5,000 (about $56,000 today). Home microwave ovens didn't become common until the 1970s when compact, affordable versions were developed."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Sriracha</em> hot sauce was invented by a Vietnamese refugee in California — David Tran started Huy Fong Foods in 1980 and named the rooster on the bottle after the year he was born (Year of the Rooster).",
+    "detail": "The company grows all its chilis in California and produces about 20 million bottles per year. Despite its global fame, Huy Fong has never spent a dollar on advertising — it spread entirely by word of mouth."
+  },
+  {
+    "category": "Food",
+    "fact": "The <em>world's most expensive coffee</em> — Kopi Luwak — is made from beans eaten and excreted by Asian palm civets. The fermentation in the civet's digestive tract supposedly improves flavor.",
+    "detail": "It sells for up to $600 per pound. Conservation concerns have been raised because most 'wild' Kopi Luwak is actually produced by caged civets. The taste improvement over regular coffee is debated by experts."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Bread mold</em> was used as an antibiotic before penicillin — historical records from ancient Egypt, China, and Serbia describe applying moldy bread to infected wounds.",
+    "detail": "These ancient healers empirically discovered what Alexander Fleming later proved scientifically — Penicillium mold produces compounds toxic to bacteria. The mechanism was unknown but the treatment worked."
+  },
+  {
+    "category": "Food",
+    "fact": "The <em>pretzel's</em> distinctive shape is said to have been invented by monks in 600 CE, with the loops representing a child's arms folded in prayer — though the historical evidence is debated.",
+    "detail": "Pretzels were a reward for children who learned their prayers in medieval Germany. The word likely comes from the Latin 'bracchiatus' (having branches), referring to the arm-like loops."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Canned food</em> was invented before the can opener — canned food was patented in 1810, but the can opener wasn't invented until 1858. For 48 years, cans had to be opened with a hammer and chisel.",
+    "detail": "Early cans were made of wrought iron soldered shut with lead — the lead contamination is suspected in the mysterious deaths of members of the 1845 Franklin Expedition to find the Northwest Passage."
+  },
+  {
+    "category": "Food",
+    "fact": "The <em>hottest part</em> of a chili pepper is not the seeds — it's the white membrane (placenta) that connects the seeds to the pepper wall. The seeds absorb heat from the membrane but aren't inherently hot.",
+    "detail": "Removing the membrane and seeds reduces heat significantly. The concentration of capsaicin in the placenta is 10–100 times higher than in the flesh of the pepper."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Ice cream</em> was once a luxury exclusive to royalty — in the 17th century, Charles I of England allegedly paid his chef £500 per year to keep the recipe secret so only he could enjoy it.",
+    "detail": "Before mechanical refrigeration, ice had to be harvested from frozen lakes and rivers in winter and stored underground in ice houses. The ice trade was a major industry until the late 1800s."
+  },
+  {
+    "category": "Technology",
+    "fact": "The <em>algorithm</em> that powers most internet advertising is more profitable than the gross domestic product of many countries — Google's advertising revenue alone exceeds $200 billion annually.",
+    "detail": "Online advertising works by real-time auctions conducted in milliseconds — when you load a webpage, your profile is auctioned to advertisers and an ad is selected and served before the page finishes loading."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>Spam email</em> accounts for approximately 45% of all email sent globally — roughly 160 billion spam messages per day — yet only about 1 in 12 million spam emails needs to result in a sale to be profitable.",
+    "detail": "The economics of spam are brutal: a single server can send millions of emails for essentially zero cost. Even with a 0.00001% conversion rate, the numbers work in the spammer's favor."
+  },
+  {
+    "category": "Technology",
+    "fact": "The <em>first hard drive</em>, IBM's 350 RAMAC from 1956, stored 5 megabytes of data — weighed over 900 kg and required a dedicated room. It was leased for $3,200 per month.",
+    "detail": "Today's hard drives store 20+ terabytes — 4 million times more data in a device the size of a paperback book. The price per gigabyte has fallen from approximately $1 billion to a fraction of a cent."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>The Linux kernel</em> — the core of Android phones, most web servers, supercomputers, and the International Space Station — was started as a hobby project by a 21-year-old Finnish student in 1991.",
+    "detail": "Linus Torvalds announced it on a newsgroup with 'I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu).' It now has over 27 million lines of code contributed by thousands of developers."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>Emojis</em> were invented in Japan in 1999 by Shigetaka Kurita for NTT DoCoMo's mobile internet platform — the original set of 176 emojis is now in the permanent collection of the Museum of Modern Art in New York.",
+    "detail": "The word 'emoji' comes from Japanese: 'e' (picture) + 'moji' (character). Despite looking similar to 'emotion,' the Japanese origin is coincidental. The Unicode consortium now manages over 3,600 official emojis."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>Social media algorithms</em> are designed to maximize engagement, not happiness or truth — engagement is correlated with strong emotion, which means content triggering outrage, fear, and disgust spreads faster than positive content.",
+    "detail": "Internal Facebook research leaked in 2021 showed the company knew its algorithm amplified divisive content and chose not to fix it because reducing outrage also reduced engagement and revenue."
+  },
+  {
+    "category": "Technology",
+    "fact": "The <em>global positioning system</em> was originally designed with 24 satellites but now has 31 — extra satellites improve coverage at high latitudes and provide redundancy if satellites fail.",
+    "detail": "GPS satellites orbit at 20,200 km altitude and transmit extremely precise atomic clock signals. Your phone calculates its position by measuring the tiny time differences of signals from multiple satellites."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>Passwords</em> were first used on computers in 1961 at MIT — and the first known password breach occurred almost immediately when a researcher printed out the entire password file to get extra computer time.",
+    "detail": "The Compatible Time-Sharing System (CTSS) introduced passwords to give users private file space. The breach demonstrated that storing passwords as plain text is insecure — a lesson that took decades to fully learn."
+  },
+  {
+    "category": "Technology",
+    "fact": "The <em>internet's backbone</em> uses the Border Gateway Protocol (BGP), a routing system so fragile that a single misconfigured router can — and has — accidentally redirected large portions of global internet traffic.",
+    "detail": "In 2010, a Chinese ISP accidentally announced routes for 37,000 networks, briefly redirecting significant amounts of global traffic through China. BGP has no authentication — it operates on trust between network operators."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>Headphone jacks</em> are over 150 years old — the 3.5mm jack is derived from the quarter-inch jack invented in the 1870s for telephone switchboards, which operators used to connect calls.",
+    "detail": "The quarter-inch jack became standard for professional audio and electric guitars. The smaller 3.5mm version was developed in the 1950s for transistor radios. Apple's removal of it from the iPhone 7 in 2016 caused widespread outrage."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Forests communicate</em> through underground fungal networks — trees share nutrients, water, and chemical warning signals through mycorrhizal fungi connecting their roots, sometimes called the 'Wood Wide Web.'",
+    "detail": "Mother trees — the oldest, largest trees — transfer carbon to seedlings of their own species preferentially. When threatened by insects, trees release chemical signals through these networks that warn neighbors."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Clouds</em> are not weightless — a typical cumulus cloud contains about 500 metric tons of water. They float because the water droplets are so tiny they fall slower than rising air currents.",
+    "detail": "A large storm cloud can contain hundreds of thousands of tons of water. When the droplets combine into drops too heavy for the updrafts to support, they fall as rain."
+  },
+  {
+    "category": "Nature",
+    "fact": "The <em>Dead Sea</em> is so salty that your skin can be burned by extended contact with the water — the mineral concentration causes osmotic dehydration of skin cells similar to how salt burns food.",
+    "detail": "Despite its name, the Dead Sea supports extremophile microorganisms — archaea and halophilic bacteria that thrive at salt concentrations fatal to almost all other life."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Ball-shaped clouds</em> called mammatus form on the underside of storm clouds — they're created when cold, dry air sinks into moist cloud bases, forming hanging pouches of dense air.",
+    "detail": "They are among the most visually striking cloud formations and almost always indicate severe thunderstorm activity nearby. Their presence after a storm signals the storm is dissipating."
+  },
+  {
+    "category": "Nature",
+    "fact": "The <em>Cenotes of Mexico</em> — sinkholes filled with crystal-clear water — formed when the Chicxulub asteroid impact 66 million years ago fractured the limestone, and groundwater filled the cracks over millennia.",
+    "detail": "The cenotes form a ring that marks the outer edge of the asteroid's impact crater. The Maya considered them sacred portals to the underworld and conducted ceremonies at them for thousands of years."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Snowflakes</em> are not actually symmetrical at the atomic level — only at the visible scale do they appear to have six-fold symmetry, because the crystal grows symmetrically in response to the same temperature and humidity at each arm.",
+    "detail": "Since each arm grows simultaneously in the same microenvironment, they develop the same pattern. But at the nanoscale there are random variations. No two snowflakes are truly identical."
+  },
+  {
+    "category": "Nature",
+    "fact": "The <em>ozone layer</em> is recovering — the Montreal Protocol of 1987, which phased out ozone-depleting chemicals, is considered the most successful international environmental agreement in history.",
+    "detail": "Scientists estimate the ozone layer will return to 1980 levels by around 2066 over the Antarctic. This represents one of the few genuine cases where humans identified, agreed on, and fixed a global environmental problem."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Fire tornadoes</em> are real phenomena — when intense heat from a wildfire creates a rotating column of air, flames can be drawn into a spinning vortex hundreds of meters tall.",
+    "detail": "They can reach temperatures of 1,000°C and winds of 160 mph, moving erratically and igniting new fires wherever they travel. A fire tornado during the 2018 Carr Fire in California reached F3 tornado strength."
+  },
+  {
+    "category": "Nature",
+    "fact": "The <em>sky is blue</em> because of Rayleigh scattering — air molecules scatter shorter (blue) wavelengths of sunlight more than longer (red) wavelengths, so more blue light reaches your eyes from all directions.",
+    "detail": "At sunrise and sunset, light travels through more atmosphere, scattering away so much blue that only the longer red and orange wavelengths remain. On the Moon, which has no atmosphere, the sky is black even in daylight."
+  },
+  {
+    "category": "Human Body",
+    "fact": "The <em>human heart</em> beats about 100,000 times per day — over a lifetime that's roughly 2.5 billion beats. It pumps about 5 liters of blood per minute, circulating the body's entire blood supply every minute.",
+    "detail": "The heart is the hardest-working muscle in the body, generating enough energy in a day to drive a truck 20 miles. Unlike other muscles, it cannot stop to rest and must maintain its rhythm without interruption for a lifetime."
+  },
+  {
+    "category": "Human Body",
+    "fact": "<em>Your stomach</em> produces a completely new lining every 3–5 days — the acid that digests food would dissolve the stomach itself if not for this constant renewal of the mucus barrier.",
+    "detail": "Helicobacter pylori bacteria, which cause most stomach ulcers, survive by burrowing through the mucus layer and disrupting this protective barrier. They were only identified as ulcer-causing in 1982, overturning decades of medical dogma."
+  },
+  {
+    "category": "Human Body",
+    "fact": "The <em>human skeleton</em> is yellow when alive — the yellowy color of fat in the marrow gives bones their internal color. The white bones familiar from anatomy classrooms have been bleached and cleaned.",
+    "detail": "Living bone is slightly flexible, not brittle. Its flexibility comes from the protein collagen woven between the mineral hydroxyapatite crystals. Bones become more brittle as collagen decreases with age."
+  },
+  {
+    "category": "Human Body",
+    "fact": "<em>Eyelashes</em> have a lifespan of only about 3 months — they serve as a sensory tripwire, triggering a blink reflex when touched to protect the eye, and grow to a specific maximum length then fall out.",
+    "detail": "The length of eyelashes is proportional to eye width across mammals — about one-third of eye width. Researchers found this ratio minimizes evaporation from the eye and reduces particle deposition by controlling airflow."
+  },
+  {
+    "category": "Human Body",
+    "fact": "The <em>kidney</em> filters approximately 200 liters of blood per day — yet produces only 1–2 liters of urine, because 99% of the filtered fluid is reabsorbed back into the bloodstream.",
+    "detail": "Each kidney contains about 1 million tiny filtering units called nephrons. The total length of kidney tubules in both kidneys is about 150 km. Kidneys can lose 75% of their nephrons before noticeable symptoms appear."
+  },
+  {
+    "category": "Human Body",
+    "fact": "<em>Human hair</em> grows about 15 cm per year — and the longest human hair ever recorded was 5.627 meters, grown by Xie Qiuping of China over 31 years.",
+    "detail": "Hair grows in cycles: an active growth phase (2–7 years), a transitional phase (2–3 weeks), and a resting phase (3 months) before the hair falls out. The pattern of hair loss in baldness involves hormone sensitivity of follicles, not the follicles themselves dying."
+  },
+  {
+    "category": "Human Body",
+    "fact": "The <em>liver</em> performs over 500 distinct functions — including detoxification, protein synthesis, bile production, blood clotting factor production, and vitamin storage.",
+    "detail": "The liver is the only internal organ that can regenerate — it can regrow from as little as 25% of its original tissue. This makes living-donor liver transplants possible, where part of a healthy liver is given to a recipient."
+  },
+  {
+    "category": "Human Body",
+    "fact": "<em>Humans are the only animals</em> known to cry emotional tears — while many animals produce tears to lubricate their eyes, only humans produce tears in response to emotional states.",
+    "detail": "The evolutionary function of emotional crying is debated. Proposed explanations include social signaling (communicating distress to others), hormonal release (clearing stress hormones), and attachment signaling (bonding through vulnerability)."
+  },
+  {
+    "category": "Human Body",
+    "fact": "The <em>sense of smell</em> is the most directly linked to memory — it bypasses the thalamus and connects directly to the amygdala and hippocampus, explaining why smells trigger more vivid memories than any other sense.",
+    "detail": "This is called the Proust phenomenon after Marcel Proust's famous passage about madeleines. The anatomical directness of olfactory memory pathways means smell-triggered memories are often retrieved with unusual emotional intensity."
+  },
+  {
+    "category": "Human Body",
+    "fact": "<em>The human brain</em> is about 73% water — even mild dehydration of 2% can impair concentration, short-term memory, and cognitive performance measurably.",
+    "detail": "The brain has no pain receptors, which is why neurosurgeons can operate on conscious patients — the brain cannot feel itself being touched. The headache of a hangover comes from dehydration and the brain's pain receptors in its surrounding tissues."
+  },
+  {
+    "category": "Psychology",
+    "fact": "The <em>generation effect</em> means you remember information better when you generate it yourself than when you read it passively — this is why teaching others and self-testing are such effective study strategies.",
+    "detail": "When you generate an answer, even if wrong, and then learn the correct answer, retention is stronger than when you simply read the correct answer. The effortful retrieval itself strengthens the memory trace."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Mindfulness meditation</em> physically changes the brain — regular practitioners show increased gray matter density in areas associated with attention, emotional regulation, and self-awareness.",
+    "detail": "Eight weeks of mindfulness practice produces measurable changes in the amygdala (stress response center) — it literally shrinks in people who meditate regularly, correlating with reduced self-reported stress."
+  },
+  {
+    "category": "Psychology",
+    "fact": "The <em>Google effect</em> — relying on search engines rather than storing information internally — has been confirmed to change memory encoding. People remember where to find information better than the information itself.",
+    "detail": "Research by Betsy Sparrow found that when people know they can look something up, they don't bother forming a strong memory of it. The internet is functioning as a form of external memory for billions of people."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Babies</em> prefer attractive faces over unattractive ones — even newborns, before they have had any cultural exposure, look longer at faces adults rate as attractive.",
+    "detail": "This suggests some aspects of beauty perception are hardwired rather than culturally learned. Symmetry and averageness (closeness to population mean) — both attractiveness cues — may signal genetic health."
+  },
+  {
+    "category": "Psychology",
+    "fact": "The <em>Zeigarnik effect</em> means unfinished tasks are remembered better than completed ones — the mind keeps unclosed loops active, intruding into awareness until they are resolved.",
+    "detail": "This was discovered by Soviet psychologist Bluma Zeigarnik after her professor noticed waiters remembered unpaid tabs better than settled ones. It explains why cliffhangers and incomplete stories feel so compelling."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Money does buy happiness</em> — but only up to about $75,000–$100,000 per year in income (updated to higher in recent research), after which the relationship weakens significantly.",
+    "detail": "A 2021 study by Matthew Killingsworth found the relationship continues beyond $75,000 for day-to-day emotional wellbeing, but earlier research by Kahneman and Deaton found evaluative life satisfaction continues to rise with income indefinitely."
+  },
+  {
+    "category": "Psychology",
+    "fact": "The <em>cocktail party effect</em> — hearing your name in a noisy crowd across the room — demonstrates that the brain processes all incoming auditory information in parallel, not just what you're focused on.",
+    "detail": "Your conscious attention filters most sound out, but lower-level processing monitors for salient signals like your name. This selective attention mechanism is now known to involve a sophisticated neural gating system."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>People overestimate how much others are judging them</em> in public — the 'imaginary audience' is particularly powerful in adolescence but persists into adulthood to a surprising degree.",
+    "detail": "Research shows that when people are embarrassed in public, they believe the event will be remembered by observers far longer than it actually is. Observers are typically far less focused on us than we assume."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Emotional contagion</em> means people unconsciously mimic the facial expressions and body language of those around them, creating a feedback loop where you feel the emotions you physically express.",
+    "detail": "This is why forcing a smile can improve mood (facial feedback hypothesis), why happy people spread happiness through groups, and why online emotional content can measurably influence the emotions of millions of readers."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "The <em>Banach-Tarski paradox</em> proves mathematically that a ball can be decomposed and reassembled into two balls identical to the original — using only rotation and translation, violating conservation of volume.",
+    "detail": "This is mathematically valid but physically impossible because it requires dividing a ball into non-measurable sets that cannot exist in physical space. It reveals a fundamental gap between mathematical and physical reality."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "A <em>prime number</em> can be prime in one number base and not in another — but primes in base 10 are defined by their properties in all bases, making primality an absolute mathematical property.",
+    "detail": "Some numbers appear to have digit-based patterns suggesting primality (like repunit primes: 11, 111, 1111111... in various bases) but true primality is indifferent to how a number is written."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "The <em>hairy ball theorem</em> proves that you cannot comb a hairy ball flat without creating at least one cowlick — more formally, there is no continuous non-vanishing tangent vector field on an even-dimensional sphere.",
+    "detail": "This has a practical implication: at any given moment, there must be at least one point on Earth where the horizontal wind speed is exactly zero. The theorem was proved by Henri Poincaré in 1885."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "<em>Perfect numbers</em> are equal to the sum of their proper divisors — 6 = 1+2+3, 28 = 1+2+4+7+14. Only 51 are known, all even, and whether any odd perfect numbers exist is an unsolved problem.",
+    "detail": "The ancient Greeks knew of 6 and 28. The next perfect numbers are 496 and 8,128. The largest known (as of 2018) has 49,724,095 digits. The pattern connecting perfect numbers to Mersenne primes was discovered by Euler."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "The <em>coastline paradox</em> shows that a coastline's length depends on the scale of measurement — the shorter the ruler, the longer the measured coastline, with no definite true length.",
+    "detail": "Britain's coastline is about 17,820 km when measured at 100km intervals and about 31,500 km when measured at 1km intervals. This fractal property means some coastlines have technically infinite length."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "<em>Gödel's incompleteness theorems</em> prove that any sufficiently powerful mathematical system contains true statements that cannot be proven within that system — mathematics cannot prove its own consistency.",
+    "detail": "Published in 1931, these theorems shattered Hilbert's program to create a complete, consistent foundation for all mathematics. They imply that no matter how many axioms you add, there will always be unprovable truths."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "The <em>sum of all positive integers</em> is sometimes provocatively stated as -1/12 — a result from analytic continuation that assigns a finite value to a divergent series in certain mathematical contexts.",
+    "detail": "This result appears in string theory and the Casimir effect. It is not a contradiction but a demonstration that the concept of 'sum' can be generalized beyond ordinary arithmetic in mathematically consistent ways."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "<em>Pythagorean triples</em> — sets of integers satisfying a² + b² = c² — were known to Babylonian mathematicians more than 1,000 years before Pythagoras was born.",
+    "detail": "The Plimpton 322 tablet, a Babylonian clay tablet from around 1800 BCE, lists 15 Pythagorean triples, some with very large numbers, suggesting a sophisticated systematic method for generating them."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "The <em>world's most translated document</em> is the Universal Declaration of Human Rights — it has been translated into over 500 languages and dialects, more than the Bible.",
+    "detail": "Translation is not simply word substitution — it requires finding equivalents for concepts that may not exist in the target language. Some human rights concepts have no direct equivalent in certain languages and require lengthy paraphrasing."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "<em>Mandarin</em> has no grammar concept of verb tenses — instead of changing verb forms, speakers add time words (yesterday, tomorrow, already) to indicate when events occur.",
+    "detail": "This difference makes Mandarin significantly easier than European languages in some ways — no irregular verbs, no conjugation, no agreement. But the tonal system and character writing present different challenges."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "The <em>click languages</em> of southern Africa, like Xhosa and Zulu, use consonantal click sounds that are found in no other language family — clicks may be the oldest type of speech sounds used by humans.",
+    "detail": "The San people of the Kalahari, who speak the most click-heavy languages, are genetically among the oldest distinct human populations. Some linguists believe clicks were present in the ancestral human language."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "<em>Esperanto</em>, the world's most widely spoken constructed language, was created in 1887 by Ludwig Lazarus Zamenhof — a Polish ophthalmologist who wanted to create a politically neutral international language.",
+    "detail": "Approximately 2 million people speak Esperanto today, with a community of native speakers (children raised speaking it from birth). It has its own culture, literature, and annual international congress."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "The <em>longest word in English</em> without a vowel is 'rhythms' at 7 letters — though Welsh, which has a more expansive definition of vowels, has common words with no traditional vowels like 'crwth' (a type of fiddle).",
+    "detail": "English has borrowed many words from Welsh, including 'corgi,' 'crag,' and 'flannel.' Welsh uses W and Y as vowels, which is why Welsh words appear to English speakers as impossible consonant clusters."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "<em>Bilingual people</em> often have different personalities in different languages — studies show they make more rational economic decisions in their second language, experience less emotional intensity, and express different values.",
+    "detail": "The 'foreign language effect' on moral reasoning is well-documented: people accept the trolley problem's utilitarian trade-off more readily in their second language because emotional resonance is reduced."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "The <em>passive voice</em> is not always evasive or bad writing — many scientific and legal documents appropriately use passive voice because the actor is unknown, unimportant, or deliberately unspecified.",
+    "detail": "'Mistakes were made' is infamous political evasion, but 'the sample was centrifuged' is perfectly appropriate science writing. The instruction to avoid passive voice is a style guideline, not a grammatical rule."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "<em>Text messages</em> have been shown to follow the same grammatical rules as spoken language — abbreviations like 'ur' and 'lol' follow consistent patterns and linguists argue they represent a new dialect, not degraded language.",
+    "detail": "John McWhorter and other linguists argue that texting is a form of 'fingered speech' — casual, fast, and conversational — and that moral panics about it destroying language echo identical concerns about telephones, newspapers, and printing."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "The <em>didgeridoo</em> is estimated to be between 1,500 and 2,000 years old — making it one of the world's oldest wind instruments — and was developed by Aboriginal Australians in Arnhem Land.",
+    "detail": "Playing it requires circular breathing — inhaling through the nose while exhaling through the mouth to maintain continuous sound. Studies show playing it can reduce sleep apnea by strengthening throat and tongue muscles."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "<em>Most pop songs</em> use the same four chords — I-V-vi-IV — making a huge proportion of popular music harmonically identical. The Australian comedy group Axis of Awesome demonstrated this with a medley of 68 songs.",
+    "detail": "This chord progression (in C major: C-G-Am-F) works because it creates a satisfying emotional arc that feels resolved. Music theorists call it the 'axis progression' and trace it back through centuries of Western music."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "The <em>theremin</em> is the only instrument played without physical contact — it generates sound by the player's hands moving near two antennas, one controlling pitch and the other volume.",
+    "detail": "Invented in 1920 by Russian physicist Leon Theremin, it is one of the earliest electronic instruments. Its eerie, wavering tone became associated with science fiction films and horror movies in the 1950s."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "<em>Bob Dylan</em> won the Nobel Prize in Literature in 2016 — the first musician to do so, recognized for 'having created new poetic expressions within the great American song tradition.'",
+    "detail": "Dylan did not attend the ceremony and his delayed written acceptance lecture barely met the deadline to qualify for the prize money. His selection was divisive among literary critics but celebrated by cultural commentators."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "The <em>Louvre's most visited area</em> after the Mona Lisa is the Nike of Samothrace — a marble statue of the winged Greek goddess of victory, missing her head and arms, yet considered one of the greatest sculptures ever created.",
+    "detail": "Found in 1863 on the Greek island of Samothrace, it dates to around 200–190 BCE. The dynamic pose — with wings spread and robes pressed against the body as if in flight — has never been surpassed for conveying movement."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "<em>Damien Hirst's</em> diamond-encrusted skull 'For the Love of God' cost £14 million to produce and was marketed at £50 million — then apparently sold to an investment group that included Hirst himself.",
+    "detail": "The work raised questions about the distinction between art and commerce, and between genuine sales and self-dealing. It became a lightning rod for debates about whether contemporary art is a genuine market or elaborate fiction."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "<em>Jazz improvisation</em> is cognitively unique — brain scans show that improvisers deactivate the area associated with self-monitoring while activating the area associated with self-expression, essentially silencing their inner critic.",
+    "detail": "This neural pattern — sometimes called 'flow state' — is distinct from playing memorized music. Expert improvisers can access this state more reliably than novices, suggesting it is a learnable skill."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "The <em>first photograph of a human face</em> was a self-portrait — Robert Cornelius took his own daguerreotype in 1839, standing still for up to 15 minutes, making him the inventor of the selfie 175 years before the iPhone.",
+    "detail": "Photography spread so rapidly that within 10 years there were over 70 daguerreotype studios in New York City alone. Portrait photography democratized image-making that had previously been available only to the wealthy."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "<em>Minimalist composers</em> like Philip Glass and Steve Reich were inspired by non-Western music — Glass studied with Ravi Shankar, and Reich was influenced by African drumming and Balinese gamelan after fieldwork in Ghana.",
+    "detail": "Reich's 'It's Gonna Rain' (1965) was created by recording a street preacher and playing two identical tape loops that gradually drift out of sync — a technique called phasing that became central to minimalist music."
+  },
+  {
+    "category": "Mythology",
+    "fact": "The <em>god of wine</em> in Greek mythology, Dionysus, was uniquely born twice — first from his mother Semele who was killed by Zeus's lightning, then carried in Zeus's thigh until full term.",
+    "detail": "This double birth — from mortal mother and immortal father, reborn from divine flesh — made Dionysus a symbol of resurrection, regeneration, and the boundary between mortality and divinity."
+  },
+  {
+    "category": "Mythology",
+    "fact": "<em>Anansi</em>, the spider trickster god of West African and Caribbean mythology, is credited with bringing stories themselves into the world — he bargained with the sky god to acquire all the world's stories for humans.",
+    "detail": "Anansi stories traveled the Atlantic slave trade from Ghana to the Caribbean and Americas, where they evolved into Br'er Rabbit stories. The spider as trickster archetype appears independently in many cultures worldwide."
+  },
+  {
+    "category": "Mythology",
+    "fact": "The <em>Chinese dragon</em> is fundamentally different from the Western dragon — it is a benevolent water deity associated with rain, rivers, and good fortune, not a fire-breathing destroyer.",
+    "detail": "Chinese emperors claimed descent from dragons and used the dragon as their symbol of power. The five-clawed dragon was reserved exclusively for the emperor — nobles were permitted only four-clawed dragons."
+  },
+  {
+    "category": "Mythology",
+    "fact": "<em>Odin</em> sacrificed his eye for wisdom — he hung himself from Yggdrasil for nine days and gave up one eye to drink from Mimir's well of knowledge, gaining the ability to read runes.",
+    "detail": "Odin's self-sacrifice mirrors themes found in many world religions — voluntary suffering to gain supernatural knowledge. He is also associated with death, poetry, war, and magic, making him the most complex figure in Norse mythology."
+  },
+  {
+    "category": "Mythology",
+    "fact": "The <em>Green Man</em> — a face surrounded by or made of leaves — appears in temples, churches, and art across cultures from Celtic Britain to India, suggesting it represents an archetype deeply embedded in human consciousness.",
+    "detail": "It appears in Romanesque churches carved by Christian craftsmen alongside explicitly Christian imagery, suggesting pre-Christian nature worship survived by being incorporated into new religious contexts."
+  },
+  {
+    "category": "Mythology",
+    "fact": "<em>Sisyphus</em>, condemned to push a boulder up a hill for eternity only to watch it roll back, was being punished for cheating death twice — he tricked Hades into wearing his own chains and later convinced Persephone to let him return briefly.",
+    "detail": "Albert Camus used Sisyphus as the central image of his philosophy of absurdism, arguing that 'one must imagine Sisyphus happy' — finding meaning in the struggle itself rather than in any achievable goal."
+  },
+  {
+    "category": "Mythology",
+    "fact": "The <em>Maori creation myth</em> describes the world being created from nothingness (Te Kore) through void and darkness to light, and the separation of Earth-mother (Papatūānuku) and Sky-father (Ranginui) who were locked in embrace.",
+    "detail": "The separation was performed by the children, particularly Tāne, who pushed his parents apart to allow light and space. Ranginui's tears of grief became the rain, and Papatūānuku's sighs became the morning mist."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "<em>Falsifiability</em>, proposed by Karl Popper, is the criterion that separates science from non-science — a scientific theory must make predictions that could in principle be proven wrong.",
+    "detail": "This criterion excludes psychoanalysis, astrology, and unfalsifiable religious claims from science — not because they are wrong, but because they cannot be tested. A theory that explains everything explains nothing."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "The <em>paradox of tolerance</em>, formulated by Karl Popper, states that unlimited tolerance must lead to the disappearance of tolerance — if we extend unlimited tolerance even to those who are intolerant, tolerance will be destroyed.",
+    "detail": "Popper concluded that in order to maintain a tolerant society, we must not tolerate intolerance — a principle that underlies hate speech laws and platform moderation policies and remains contested in liberal political philosophy."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "<em>The trolley problem</em> was not always a thought experiment — a near-identical moral dilemma was faced by engineers designing early automobile braking systems, who had to decide how to program automatic emergency responses.",
+    "detail": "Today it is central to programming autonomous vehicles and AI decision systems. The abstract philosophical puzzle has become an engineering specification problem, revealing how philosophy directly shapes technology."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "<em>Epicurus</em> did not advocate hedonism in the modern sense — he taught that the highest pleasure was ataraxia (tranquility) achieved through simple living, friendship, and freedom from pain and fear.",
+    "detail": "He lived in a commune called the Garden with friends including women and slaves, which was revolutionary. His actual dietary advice was bread, water, and cheese — hardly the indulgent lifestyle his name now implies."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "<em>Moral relativism</em> is often confused with moral tolerance — the view that morality varies between cultures does not logically imply that we cannot make cross-cultural moral judgments.",
+    "detail": "Even committed relativists acknowledge that endorsing cultural practices that harm individuals involves a moral judgment. The tension between cultural respect and universal human rights is one of the central unsolved problems in applied ethics."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "The <em>Ship of Theseus paradox</em> has a modern cousin in neuroscience — since every neuron in your brain is replaced over your lifetime and your neural connections constantly rewire, are you the same person who started reading this sentence?",
+    "detail": "Personal identity philosophers distinguish between psychological continuity (memories and personality) and physical continuity (same body). Teleportation thought experiments exploit this by asking whether a reconstructed copy would be 'you.'"
+  },
+  {
+    "category": "Economics",
+    "fact": "The <em>paradox of value</em> — why water is cheap and diamonds expensive despite water being essential — was solved by marginal utility theory. Price reflects the value of the last unit consumed, not total value.",
+    "detail": "Water is abundant enough that the last glass of water you'd ever want to drink has low value to you. Diamonds are scarce enough that each additional one retains high value. Adam Smith posed this paradox but couldn't fully resolve it."
+  },
+  {
+    "category": "Economics",
+    "fact": "<em>Hyperinflation</em> in Weimar Germany reached 3.25 × 10^6 percent per month in October 1923 — prices doubled every 3.7 days, and people needed wheelbarrows of banknotes to buy bread.",
+    "detail": "The government literally burned currency as fuel because it was cheaper than firewood. The psychological trauma of this period is cited by historians as contributing to the political instability that enabled Hitler's rise."
+  },
+  {
+    "category": "Economics",
+    "fact": "The <em>Keynesian multiplier</em> suggests that government spending can create more economic activity than the money spent — a dollar spent by government generates more than a dollar of GDP through subsequent spending by recipients.",
+    "detail": "The multiplier effect depends on the marginal propensity to consume — how much of each dollar received people spend rather than save. During recessions, when savings increase, the multiplier may be smaller than in normal times."
+  },
+  {
+    "category": "Economics",
+    "fact": "<em>Regulatory capture</em> occurs when government agencies supposed to regulate industries end up being controlled by them — a phenomenon where the regulated become the regulators through revolving doors and lobbying.",
+    "detail": "The concept was developed by Nobel Prize winner George Stigler in 1971. Examples include the FDA, SEC, and FAA all facing accusations of becoming too aligned with the industries they oversee."
+  },
+  {
+    "category": "Economics",
+    "fact": "The <em>Coase theorem</em> states that when transaction costs are zero, economic efficiency is achieved regardless of initial property rights assignments — parties will negotiate to the optimal outcome.",
+    "detail": "Ronald Coase used it to argue that pollution rights could be allocated to either polluters or victims, and they'd negotiate to the same efficient level either way. In reality, transaction costs are never zero — which was Coase's actual point."
+  },
+  {
+    "category": "Economics",
+    "fact": "<em>Status goods</em> — Veblen goods — become more desirable as their price increases, violating normal demand curves. Luxury brands deliberately keep prices high to maintain exclusivity and status signal value.",
+    "detail": "Thorstein Veblen coined 'conspicuous consumption' in 1899 — buying things not for their utility but to signal wealth and status. This was once associated with the upper class but has become a mainstream consumer psychology phenomenon."
+  },
+  {
+    "category": "Medicine",
+    "fact": "The <em>first artificial heart</em> was implanted in 1969 by Dr. Denton Cooley — the patient survived on it for 64 hours until a donor heart became available.",
+    "detail": "Total artificial hearts have since sustained patients for years while waiting for transplants. The SynCardia total artificial heart, approved in 2004, has been implanted over 1,000 times and supported patients for up to 4 years."
+  },
+  {
+    "category": "Medicine",
+    "fact": "<em>Laughter genuinely is medicine</em> — it reduces stress hormones, increases immune cell activity, triggers endorphin release, and can reduce pain perception through mechanisms similar to other forms of positive emotion.",
+    "detail": "Norman Cousins famously self-treated a painful spinal disease with Marx Brothers films and vitamin C in 1964, achieving remarkable recovery. His book 'Anatomy of an Illness' helped legitimize humor as a therapeutic tool."
+  },
+  {
+    "category": "Medicine",
+    "fact": "The <em>vagus nerve</em> is the brain's superhighway to the body — it carries signals between the brain and almost every major organ, regulating heart rate, digestion, immune response, and mood.",
+    "detail": "Vagus nerve stimulation is now an FDA-approved treatment for epilepsy, depression, and stroke rehabilitation. Stimulating it through deep breathing, humming, and cold water exposure is a growing area of wellbeing research."
+  },
+  {
+    "category": "Medicine",
+    "fact": "<em>Surgery without anesthesia</em> was not always as horrific as imagined — some patients entered a dissociative state of shock, others were drunk, and experienced surgeons could complete amputations in under a minute.",
+    "detail": "Robert Liston, a renowned 19th-century Edinburgh surgeon, once amputated a leg in 2.5 minutes. He also accidentally amputated his assistant's fingers in the same operation — both patient and assistant later died of infection."
+  },
+  {
+    "category": "Medicine",
+    "fact": "The <em>microbiome's role in mental health</em> is one of medicine's most surprising emerging findings — gut bacteria produce 90% of the body's serotonin and communicate with the brain through the vagus nerve.",
+    "detail": "Mouse studies show that transplanting gut bacteria from depressed or anxious mice to healthy germ-free mice induces depression and anxiety behaviors. Clinical trials of psychobiotic treatments are now underway."
+  },
+  {
+    "category": "Medicine",
+    "fact": "<em>Blood pressure</em> varies significantly throughout the day — it's lowest at night, rises sharply upon waking (the morning surge), and is influenced by posture, stress, meals, and even which arm is used to measure it.",
+    "detail": "The difference in blood pressure between arms can indicate cardiovascular disease. A difference greater than 10 mmHg is associated with significantly increased risk of stroke and death from cardiovascular causes."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "The <em>Milky Way smells of raspberries</em> — astronomers discovered ethyl formate, a compound responsible for the flavor of raspberries and the smell of rum, in Sagittarius B2, a giant dust cloud near our galaxy's center.",
+    "detail": "Astronomers have identified over 50 different molecules in interstellar gas clouds, including ethanol (alcohol), formic acid (found in ant venom), and vinyl alcohol. Space is far more chemically complex than once thought."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "Stars can have <em>planets that orbit backwards</em> — several exoplanets have been found orbiting in the opposite direction of their star's rotation, suggesting violent gravitational interactions early in the solar system's history.",
+    "detail": "Retrograde orbiting planets cannot form in place — they must be captured from another system or scattered into their current orbits by gravitational interactions with giant planets, revealing the chaotic histories of solar systems."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "The <em>Big Bang did not happen at a point</em> — space itself expanded from a state of extreme density everywhere simultaneously. There is no 'center' of the universe and no specific location where it began.",
+    "detail": "This is one of the most counterintuitive aspects of cosmology. An analogy is the surface of an expanding balloon — every point on the surface sees every other point moving away, and there is no center point on the surface itself."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "<em>Pulsars</em> are more accurate timekeepers than atomic clocks — millisecond pulsars, which rotate hundreds of times per second, keep time with a stability rivaling the best human-made clocks.",
+    "detail": "Scientists have proposed using pulsars as a galactic GPS system — spacecraft could determine their position anywhere in the galaxy by triangulating signals from known pulsars. NASA's NICER telescope is testing this concept."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "The <em>surface of Venus</em> is hot enough to melt lead — at an average of 465°C it is actually hotter than Mercury, despite Mercury being closer to the Sun.",
+    "detail": "Venus's thick CO2 atmosphere creates the most extreme greenhouse effect in the solar system, trapping heat so effectively that even the night side is as hot as the day side. Soviet Venera probes survived only 23–127 minutes after landing."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "<em>Saturn would float</em> on water — it is the only planet in our solar system with an average density less than water (0.687 g/cm³ versus water's 1 g/cm³), if you could find an ocean big enough.",
+    "detail": "This is because Saturn is mostly hydrogen and helium gas with a relatively small rocky core. Its large size means it contains more mass than any other planet except Jupiter, despite its low density."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "The <em>first object humans ever sent on an escape trajectory</em> from Earth was Luna 1 in 1959 — it missed the Moon and went into solar orbit, where it remains today as the first artificial sun satellite.",
+    "detail": "The Soviet probe was intended to impact the Moon but overshot due to a timing error. It became the first spacecraft to measure the solar wind and escape Earth's gravitational sphere of influence."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "<em>Water has been found</em> in asteroid belts, cometary tails, the Moon's permanently shadowed craters, the atmosphere of exoplanets, and molecular clouds throughout the galaxy — water is one of the universe's most common molecules.",
+    "detail": "This ubiquity of water in space, combined with the discovery that water was delivered to early Earth by comets and asteroids, supports the hypothesis that the ingredients for life are common throughout the universe."
+  },
+  {
+    "category": "Space",
+    "fact": "The <em>rings of Uranus</em> are oriented vertically — Uranus is tilted on its side at 98°, so its rings run nearly top-to-bottom rather than around its equator like Saturn's.",
+    "detail": "Uranus may have been knocked on its side by a collision with an Earth-sized object early in the solar system's history. Its unusual orientation means each pole spends 42 years in continuous sunlight followed by 42 years of darkness."
+  },
+  {
+    "category": "Space",
+    "fact": "The <em>twin Voyager probes</em> are powered by plutonium-238 that decays and generates heat, which thermoelectric generators convert to electricity — and the electricity generated decreases by about 4 watts per year.",
+    "detail": "NASA manages the probes' dwindling power by turning off instruments one by one. Despite launching with 470 watts, Voyager 1 now generates only about 249 watts. Scientists estimate it will lose contact around 2025."
+  },
+  {
+    "category": "Space",
+    "fact": "<em>Mars has two moons</em> — Phobos and Deimos — that are almost certainly captured asteroids. Phobos orbits so close and fast that it rises in the west and sets in the east, completing three orbits per Martian day.",
+    "detail": "Phobos is also slowly being pulled toward Mars by tidal forces — it will either crash into Mars or be torn apart into a ring system in approximately 50 million years."
+  },
+  {
+    "category": "Space",
+    "fact": "The <em>Chandrasekhar limit</em> — 1.4 solar masses — is the maximum mass a white dwarf star can have before collapsing under gravity into a neutron star or triggering a type Ia supernova.",
+    "detail": "Subrahmanyan Chandrasekhar calculated this limit in 1930 at age 19 on a steamship voyage from India to England. His supervisor Arthur Eddington publicly mocked the result. Chandrasekhar won the Nobel Prize for it in 1983."
+  },
+  {
+    "category": "Space",
+    "fact": "<em>The Sun's corona</em> — its outer atmosphere — is paradoxically millions of degrees hotter than its surface, which is 'only' about 5,500°C.",
+    "detail": "This coronal heating problem has puzzled scientists for decades. Current leading explanations involve nanoflares (tiny magnetic reconnection events) and Alfvén waves traveling up magnetic field lines — but no consensus exists."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Quantum computers</em> don't just run calculations faster — they work on an entirely different principle. A quantum bit (qubit) can exist in a superposition of 0 and 1 simultaneously, allowing certain algorithms to solve exponentially faster.",
+    "detail": "Grover's algorithm can search an unsorted database quadratically faster than classical computers. Shor's algorithm can factor large numbers exponentially faster — potentially breaking most current encryption if quantum computers scale up."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>Dunbar number</em> — roughly 150 — is the cognitive limit on the number of stable social relationships humans can maintain, based on neocortex size relative to body.",
+    "detail": "Robin Dunbar observed this number in primate group sizes and found it corresponds to human social group sizes from hunter-gatherer bands to military companies to village sizes. Online social networks may not fundamentally change this limit."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Electric eels</em> use their electricity not just to stun prey but to remote-control fish muscles — they send pulses that cause involuntary muscle contractions in hidden prey, making it reveal itself by moving.",
+    "detail": "Kenneth Catania discovered this by observing eels seemingly 'hunt' dead fish mounted on remote-controlled cars. The prey's own muscles betray it by jerking in response to the electrical pulse."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>human genome</em> shares about 60% of its genes with a banana, 90% with a cat, 96% with a chimpanzee, and 85% with a zebrafish — reflecting our shared evolutionary heritage.",
+    "detail": "Gene sharing doesn't mean similarity of the organism — the shared genes are often fundamental cellular machinery (like DNA replication and metabolism) that evolved once and has been conserved across billions of years."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Nanoparticles</em> behave completely differently from their bulk counterparts — gold nanoparticles appear red or purple rather than gold, and become useful catalysts that bulk gold is not.",
+    "detail": "At the nanoscale, quantum effects dominate and surface-area-to-volume ratios become extreme. Gold nanoparticles are being tested for targeted cancer drug delivery — they accumulate in tumors more than in healthy tissue."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>speed of gravity</em> equals the speed of light — confirmed by the 2017 detection of gravitational waves from merging neutron stars arriving simultaneously with a gamma-ray burst.",
+    "detail": "This confirmation was a century in the making, proving Einstein's general relativity prediction that gravity travels as waves at light speed. The neutron star merger occurred 130 million light-years away."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>Mongol invasion</em> may have transported the Black Death westward along the Silk Road — the plague's entry into Europe is often traced to a 1346 Mongol siege where infected corpses were catapulted over city walls.",
+    "detail": "This was one of the first recorded instances of biological warfare. The Mongols spread the plague into Europe's most connected trading cities, from which it spread along maritime routes to devastate the continent."
+  },
+  {
+    "category": "History",
+    "fact": "<em>The marathon's 26.2 mile distance</em> was standardized at the 1908 London Olympics — extended from 25 miles so the race could start at Windsor Castle and finish in front of the Royal Box at the Olympic stadium.",
+    "detail": "The original marathon commemorating the run from Marathon to Athens was only about 25 miles. The precise 26 miles 385 yards became standard by 1921, based entirely on the whims of the British royal family."
+  },
+  {
+    "category": "History",
+    "fact": "<em>Ancient Egyptians</em> played board games — Senet, one of the oldest known games (3100 BCE), was found in Tutankhamun's tomb and featured game pieces, throwing sticks, and squares representing the journey of the soul.",
+    "detail": "Board games appear independently in dozens of ancient cultures. The Royal Game of Ur (2600 BCE) from Mesopotamia was recently decoded by analyzing a clay tablet instruction manual written 3,700 years ago."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>transcontinental railroad</em> was built primarily by Chinese and Irish immigrant laborers under extraordinarily dangerous conditions — Chinese workers were paid less and given more dangerous jobs like blasting through mountains.",
+    "detail": "An estimated 1,000–1,200 Chinese workers died during construction, mostly in explosions. The railroad, completed in 1869, transformed the American economy and enabled settlement of the West at devastating cost to Native peoples."
+  },
+  {
+    "category": "History",
+    "fact": "<em>The phrase 'rule of thumb'</em> does not derive from a law allowing men to beat their wives with sticks no thicker than a thumb — this popular claim is a modern myth with no historical legal basis.",
+    "detail": "The actual origin is uncertain but may derive from craftsmen using their thumbs as rough measurement tools. The wife-beating claim appears to have originated in the 1970s feminist legal scholarship based on misreading historical sources."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>US Declaration of Independence</em> was not signed on July 4th — most delegates signed it on August 2, 1776. July 4th is when the Continental Congress approved the final text, not when it was signed.",
+    "detail": "John Hancock, whose large signature is famous, signed on August 2nd. Some delegates didn't sign until later in 1776. Two delegates who voted for independence refused to sign it, and one signed months later."
+  },
+  {
+    "category": "History",
+    "fact": "<em>Florence Nightingale</em> was a pioneering statistician as much as a nurse — she invented the polar area diagram (a type of pie chart) to visualize the preventable causes of death in military hospitals.",
+    "detail": "Her statistical analysis showed that far more soldiers died from preventable infections than from wounds — 16,000 out of 18,000 deaths were preventable. Her data visualization campaign transformed military medicine."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>gunpowder empires</em> — Ottoman, Safavid, and Mughal — rose to power in the 15th–16th centuries because they mastered the use of cannons and firearms while traditional cavalry-based opponents had not.",
+    "detail": "The decisive Battle of Panipat (1526), which established the Mughal Empire, was won by Babur's use of mobile artillery against elephants and cavalry that had dominated Indian warfare for millennia."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Peat bogs</em> are extraordinary preservation environments — the absence of oxygen, high acidity, and antimicrobial sphagnum moss can preserve human bodies for thousands of years in extraordinary detail.",
+    "detail": "Tollund Man, found in Denmark in 1950, died around 400 BCE yet his face was so well-preserved that police initially believed it was a recent murder. Bog bodies have been found with intact skin, hair, organs, and even last meals."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Earthquakes can trigger other earthquakes</em> across great distances — large quakes have been shown to trigger seismic activity thousands of miles away within days.",
+    "detail": "The 2002 Denali earthquake in Alaska triggered small earthquakes in Yellowstone, nearly 2,000 miles away, within minutes. Scientists now study 'dynamic triggering' to understand how seismic waves can destabilize fault systems globally."
+  },
+  {
+    "category": "Nature",
+    "fact": "The <em>highest wind speed ever recorded</em> on Earth was 408 km/h (253 mph) on Barrow Island, Australia during Tropical Cyclone Olivia in 1996 — not in a tornado.",
+    "detail": "Tornadoes can reach higher estimated speeds (up to 480 km/h in the 1999 Oklahoma tornado) but these aren't recorded by instruments as the tornado was too destructive to maintain measurement equipment."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>The ocean absorbs</em> about 30% of the CO2 produced by humans — acting as a massive carbon sink that moderates climate change, but making the ocean more acidic in the process.",
+    "detail": "Ocean pH has dropped from 8.2 to 8.1 since the Industrial Revolution — a 26% increase in acidity. This threatens marine organisms that build calcium carbonate shells and skeletons, particularly at the base of the food chain."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Rainforests</em> create their own weather — moisture evaporated from leaves rises, forms clouds, and falls back as rain, in a self-sustaining cycle that can maintain the ecosystem even through dry seasons.",
+    "detail": "The Amazon River discharges more water vapor into the atmosphere than it does into the ocean. 'Flying rivers' of atmospheric moisture transport water from the Amazon to the Rio de la Plata basin and to Brazilian cities."
+  },
+  {
+    "category": "Nature",
+    "fact": "The <em>Mariana Trench</em> contains plastic pollution — researchers have found plastic bags and single-use items at the deepest point on Earth, 11 km below the ocean surface.",
+    "detail": "Microplastics have been found in every ocean, every depth, and every remote wilderness sampled — including the summit of Everest, Arctic sea ice, and the lungs of fish living miles deep. Plastics are now a geological marker of the Anthropocene."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Wolves</em> change rivers — the reintroduction of wolves to Yellowstone in 1995 triggered a 'trophic cascade' that changed where elk grazed, allowing vegetation to recover along riverbanks, which stabilized the rivers' courses.",
+    "detail": "This is now one of the most famous examples of a 'landscape of fear' — predators reshape ecosystems not just by eating prey but by changing prey behavior. The mere presence of wolves altered the entire park's ecology."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>mimic octopus</em> can impersonate not just one but over 15 different species — it appears to select its disguise based on the specific predator threatening it.",
+    "detail": "When threatened by damselfish, it impersonates the damselfish's natural predator (banded sea snakes). When threatened by lionfish predators, it impersonates the lionfish. This context-specific mimicry requires remarkable cognitive flexibility."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Orca whales</em> have distinct cultures — different pods have unique dialects, unique hunting techniques, and pass these behaviors down through generations. Some pods eat only fish, others only marine mammals, and they never interbreed.",
+    "detail": "The cultural divergence between orca ecotypes is so pronounced that some scientists argue they represent distinct species. Their geographic ranges overlap, yet different cultural groups maintain separate identities through learned behavior."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>immortal jellyfish</em> when stressed or injured can reabsorb its tentacles, contract into a ball, and sink to the ocean floor where it reverts entirely to its juvenile polyp state.",
+    "detail": "Unlike other animals, it bypasses death by transforming into an entirely different life stage. Theoretically it can repeat this process indefinitely. Scientists are studying its transdifferentiation mechanisms for potential medical applications."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Bats</em> are the only mammals capable of true sustained flight — flying squirrels and colugos glide but cannot generate lift. Bats' wings are modified forelimbs with greatly elongated finger bones supporting a membrane.",
+    "detail": "Bats make up about 20% of all mammal species. They are crucial pollinators (agave plants, which produce tequila, depend on bats for pollination) and pest controllers — a single bat can eat 1,000 mosquitoes per hour."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>blue-ringed octopus</em>, only the size of a golf ball, carries enough venom to kill 26 adults within minutes — yet it has no antivenom.",
+    "detail": "Its saliva contains tetrodotoxin, the same toxin in pufferfish. Victims remain conscious but paralyzed while respiratory muscles fail. Survival requires hours of artificial ventilation — pressing on the chest manually until the toxin clears."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Dogs can smell cancer</em>, low blood sugar, seizures about to happen, and fear — trained dogs detect certain cancers with 97% accuracy by sniffing urine or breath samples.",
+    "detail": "The olfactory cortex of a dog's brain is 40 times larger relative to brain size than a human's. Their sense of smell is estimated at 10,000–100,000 times more sensitive than ours, detecting parts per trillion of certain compounds."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>Amazon river dolphin</em> (boto) is pink — the color comes from blood vessels close to the surface and scar tissue from frequent fighting. Older males are often more pink because of more accumulated scarring.",
+    "detail": "Amazon river dolphins are considered intelligent tool users — males have been observed carrying objects in apparent display behavior, and they inhabit flooded forests during rainy season, navigating between tree trunks."
+  },
+  {
+    "category": "Technology",
+    "fact": "The <em>first commercial text message</em> was sent on December 3, 1992 — it said 'Merry Christmas' and was sent from a computer to a mobile phone in the UK.",
+    "detail": "Mobile-to-mobile texting wasn't possible until 1993. Despite early dismissal by carriers as a trivial feature, SMS became the most widely used data application in history, sending 8.7 trillion messages globally in its peak year."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>Augmented reality</em> technology existed in aircraft cockpits as 'heads-up displays' since the 1950s before becoming a consumer technology — fighter pilots have used AR-style overlays for targeting and navigation for decades.",
+    "detail": "The first wearable consumer AR device was Google Glass (2013), which failed commercially despite impressive technology. The technology matured through industrial applications before consumer AR glasses became viable in the 2020s."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>The first home video game system</em>, the Magnavox Odyssey (1972), used transparent plastic overlays placed on the TV screen to create different games — the console itself could only move dots on screen.",
+    "detail": "It predated Pong by several months and inspired Atari's Pong after Nolan Bushnell saw a demonstration. Magnavox sued and won royalties from virtually every major video game company through the 1970s."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>Deepfake technology</em> uses the same neural network technique (GANs — generative adversarial networks) to generate both realistic fake images and to detect them — the detector and generator compete until the fakes become undetectable.",
+    "detail": "Ian Goodfellow invented GANs in 2014 after arguing with colleagues at a bar about whether such a system was theoretically possible. He went home that night and coded the first working version."
+  },
+  {
+    "category": "Technology",
+    "fact": "The <em>world's first computer programmer</em> was Ada Lovelace — she wrote the first algorithm intended for execution on Charles Babbage's Analytical Engine in 1843, a full century before modern computers existed.",
+    "detail": "She recognized that the Analytical Engine could go beyond pure calculation to manipulate symbols according to rules — understanding the concept of general-purpose computing before the hardware existed to demonstrate it."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Nutmeg</em> can be hallucinogenic in large doses — it contains myristicin, a compound related to mescaline, and consuming 2–3 whole nutmegs can cause hallucinations, seizures, and serious medical complications.",
+    "detail": "It was used recreationally as a drug in medieval Europe and by Malcolm X during his prison years, as he describes in his autobiography. At normal culinary doses it is harmless."
+  },
+  {
+    "category": "Food",
+    "fact": "The <em>Guinness Book of World Records</em> was commissioned by the Guinness brewery in 1954 to settle pub arguments — Sir Hugh Beaver, the brewery's managing director, wanted to resolve a dispute about the fastest game bird in Europe.",
+    "detail": "The first edition was given away free in pubs. It became the world's bestselling copyrighted book of all time by 1974. The question that inspired it — which game bird is fastest — was never definitively answered."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Popcorn</em> is one of the oldest snack foods — ears of popcorn were found in a cave in New Mexico dating to approximately 3,600 BCE.",
+    "detail": "Each kernel of popcorn contains a small drop of water surrounded by starch. When heated, the water vaporizes, pressure builds until the kernel explodes and the starch gelatinizes into the foamy white structure we eat."
+  },
+  {
+    "category": "Food",
+    "fact": "The <em>Maillard reaction begins</em> only above 140–165°C — which is why boiling food (which stays at 100°C) doesn't brown it, and why roasting, frying, and baking produce such different flavors from boiling.",
+    "detail": "The hundreds of flavor compounds created by the Maillard reaction are responsible for the characteristic tastes of roast coffee, seared steak, toasted bread, and dark beer — things no amount of boiling can replicate."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Umami</em>, the fifth taste alongside sweet, sour, salty, and bitter, was identified by Japanese chemist Kikunae Ikeda in 1908 — he isolated glutamate from kombu seaweed to explain the distinctive savory quality of dashi.",
+    "detail": "The word 'umami' means 'pleasant savory taste' in Japanese. Specific receptors for glutamate were confirmed on human taste buds in 2000, finally establishing umami as a distinct basic taste rather than a combination of others."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Olives</em> are completely inedible straight from the tree — they are intensely bitter from oleuropein and must be cured in water, brine, or lye for weeks to months before they're palatable.",
+    "detail": "The curing process was presumably discovered by accident thousands of years ago when olives fell in saltwater or freshwater streams. Mediterranean olive cultivation dates to at least 3500 BCE."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Champagne</em> was originally considered a failed wine — early sparkling wine was produced accidentally when fermentation continued in the bottle during cold Champagne winters, causing corks to pop and bottles to explode.",
+    "detail": "The monk Dom Pérignon was originally tasked with preventing bubbles in the wine, not creating them. The shift to celebrating bubbles happened as wealthy English customers began to prefer the sparkling style."
+  },
+  {
+    "category": "Human Body",
+    "fact": "<em>Humans are the only primates</em> that are fat from birth — newborn babies have approximately 15% body fat at birth, compared to less than 3% in other primate infants.",
+    "detail": "This fat reserve is thought to be necessary for brain development — the newborn human brain consumes approximately 60% of the infant's total energy, requiring stored fat as a fuel buffer when feeding is interrupted."
+  },
+  {
+    "category": "Human Body",
+    "fact": "The <em>tonsils and adenoids</em> are part of Waldeyer's ring, a circle of lymphoid tissue that guards the entrance to the digestive and respiratory systems — sampling pathogens before they can penetrate deeper.",
+    "detail": "They are largest in childhood when the immune system is most actively learning to recognize pathogens, then shrink through adulthood. This is why tonsil problems are most common in children and often resolve naturally."
+  },
+  {
+    "category": "Human Body",
+    "fact": "<em>Circadian rhythms</em> exist in virtually every cell of your body, not just the brain — your liver, heart, kidneys, and immune system all run on their own 24-hour clocks synchronized by light signals from the master clock in the hypothalamus.",
+    "detail": "Disrupting these rhythms — through shift work, jet lag, or artificial light at night — is associated with increased risk of metabolic disease, cancer, cardiovascular disease, and depression, affecting timing of drug metabolism too."
+  },
+  {
+    "category": "Human Body",
+    "fact": "The <em>appendix scar</em> healed over 500,000 years ago in human ancestors — some researchers believe early human appendixes were much larger and more functional, shrinking through evolution as diets changed.",
+    "detail": "The cecal appendix appears independently in over 600 animal species, suggesting it has repeatedly evolved and lost function across vertebrate evolution — arguing against it being purely vestigial in all cases."
+  },
+  {
+    "category": "Human Body",
+    "fact": "<em>Cells in the body commit suicide</em> — programmed cell death (apoptosis) eliminates approximately 50–70 billion cells per day in the average adult, clearing damaged, infected, or no-longer-needed cells.",
+    "detail": "Cancer can be understood partly as a failure of apoptosis — cells that should self-destruct continue to divide. Many cancer drugs work by restoring the apoptosis signal that cancer cells have learned to suppress."
+  },
+  {
+    "category": "Human Body",
+    "fact": "The <em>knee</em> is the body's most complex joint — it must simultaneously provide stability for weight-bearing and flexibility for movement, handle forces up to 8 times body weight during running, and resist torsion.",
+    "detail": "It achieves this through an extraordinary combination of bones, cartilage, ligaments, tendons, and bursae. The meniscus (cartilage pad) is one of the most commonly injured structures in sports, with over 1 million surgeries performed annually in the US."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Post-traumatic growth</em> is a real phenomenon — many trauma survivors report positive psychological changes after their experience, including greater appreciation of life, stronger relationships, and new possibilities.",
+    "detail": "Richard Tedeschi and Lawrence Calhoun found that post-traumatic growth is actually more common than post-traumatic stress disorder following trauma. The growth comes not from the trauma itself but from the struggle to cope with it."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Attention restoration theory</em> suggests that natural environments restore mental fatigue more effectively than urban environments — even brief exposure to nature improves concentration, reduces stress, and boosts working memory.",
+    "detail": "Studies show that walking in a park improves performance on attention tasks more than walking on a busy street. Even views of nature through a window or indoor plants produce measurable cognitive benefits."
+  },
+  {
+    "category": "Psychology",
+    "fact": "The <em>fundamental attribution error</em> is the universal tendency to explain others' behavior by their character while explaining our own by circumstances — we're lazy; they're just a lazy person.",
+    "detail": "This asymmetry in attribution causes us to underestimate situational factors affecting others while overestimating their internal traits. It fuels prejudice, poor hiring decisions, and interpersonal conflict worldwide."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Hypnosis is real</em> — brain imaging shows genuine changes in activity and connectivity under hypnosis that differ from both normal wakefulness and imagination. Hypnotized subjects are not simply playing along.",
+    "detail": "Stanford researchers identified that about 10% of people are 'highly hypnotizable' and show dramatically different neural patterns during hypnosis. Hypnosis is now an evidence-based treatment for certain types of chronic pain and phobias."
+  },
+  {
+    "category": "Psychology",
+    "fact": "The <em>availability heuristic</em> causes people to judge the frequency or probability of events by how easily examples come to mind — making them dramatically overestimate risks that are vivid and memorable.",
+    "detail": "Plane crashes are more memorable than car crashes, causing people to fear flying more than driving despite the far higher per-mile risk of driving. Crime rates falling while news coverage of crime increases causes public perception to diverge from reality."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "<em>Zhuangzi</em>, the ancient Chinese philosopher, questioned the boundary between dreams and waking life — he dreamed he was a butterfly and upon waking asked whether he was a man who dreamed he was a butterfly or a butterfly dreaming he was a man.",
+    "detail": "This 'butterfly dream' raises the same questions as Descartes' evil demon and modern simulation theory — how do we know that what we experience as reality is not a dream? Chinese philosophy approached this playfully rather than anxiously."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "<em>Hannah Arendt</em> coined the phrase 'the banality of evil' after covering the trial of Adolf Eichmann — arguing that evil is often perpetrated not by monsters but by ordinary people who fail to think critically about their actions.",
+    "detail": "Eichmann claimed he was 'just following orders' — and Arendt controversially argued he was not lying. Her point was terrifying: that evil does not require malice, only thoughtlessness. The book caused enormous controversy."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "The <em>Chinese room argument</em> by John Searle claims that a computer program following rules to produce language output does not truly 'understand' — it manipulates symbols without knowing what they mean.",
+    "detail": "His thought experiment imagines a person in a room following Chinese language rules without understanding Chinese, producing correct outputs. He argues this is what AI does, making true machine understanding impossible in principle."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "<em>Consequentialism</em> in its pure form leads to disturbing conclusions — if the only moral criterion is outcomes, then harvesting one person's organs to save five is morally required, a conclusion most find repugnant.",
+    "detail": "This tension between outcome-focused and rule-focused ethics has no fully satisfactory resolution. Philosophers like Derek Parfit spent careers trying to show that a consistent ethical theory could avoid such conclusions."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "The <em>Bengali language</em> is spoken by approximately 230 million people, making it the 6th most spoken language in the world — yet it receives far less attention in Western linguistics than languages with fewer speakers.",
+    "detail": "The Bengali Language Movement of 1952, when Pakistani authorities tried to impose Urdu on East Pakistan, eventually contributed to the 1971 independence of Bangladesh. February 21, the day of protests, is now International Mother Language Day."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "<em>Sarcasm is culturally specific</em> — while it exists in many languages, the markers, conventions, and frequency of sarcasm vary enormously. British English sarcasm is notoriously difficult for non-native speakers to detect.",
+    "detail": "Cross-cultural studies show that some cultures rarely use sarcasm and speakers from these cultures have difficulty detecting it in others. Sarcasm detection is also impaired in autism, brain injuries affecting the right hemisphere, and schizophrenia."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "The <em>oldest known love poem</em> was written in Sumerian about 4,000 years ago — it was composed for a sacred marriage ceremony and uses imagery remarkably similar to modern romantic poetry.",
+    "detail": "The poem describes physical beauty, longing, and the anticipation of union in terms that any modern reader would recognize as love poetry. Human emotional experience and its poetic expression have changed remarkably little in 4,000 years."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "<em>Blue pigment</em> was historically more expensive than gold — lapis lazuli, used to make ultramarine blue, had to be imported from Afghanistan and was worth more by weight than gold in medieval Europe.",
+    "detail": "This is why the Virgin Mary is traditionally painted in blue — it was the most costly color, signaling the importance of the subject. Artists like Vermeer used it lavishly despite the cost, possibly contributing to his financial ruin."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "The <em>electric slide, the Macarena, and the Harlem Shake</em> all demonstrate how dance trends spread — historically through community gatherings, later through television, and now through social media within days rather than years.",
+    "detail": "The Harlem Shake meme spread globally in under a week in 2013. Social media has compressed the diffusion timescale for cultural phenomena from years to days, fundamentally changing how culture spreads."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "<em>Rembrandt</em> was so financially irresponsible that he went bankrupt in 1656 and had to sell his house, art collection, and most possessions at auction.",
+    "detail": "Despite his business failures, his artwork continued to appreciate during his lifetime. His bankruptcy was partly caused by speculating in his own work — buying back his own prints at high prices in an attempt to maintain their market value."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "The <em>Sistine Chapel's ceiling</em> was not meant to be a masterpiece — Pope Julius II originally wanted simple geometric patterns with figures of the twelve apostles. Michelangelo negotiated for more creative freedom and spent four years on the result.",
+    "detail": "Michelangelo considered himself a sculptor, not a painter, and initially tried to decline the commission. The resulting work, with over 300 figures across 500 square meters, is considered the greatest fresco ever painted."
+  },
+  {
+    "category": "Mythology",
+    "fact": "The <em>kraken</em> of Norse mythology was almost certainly inspired by real encounters with giant squid — sailors' accounts describe tentacled sea monsters large enough to drag ships under.",
+    "detail": "Giant squid can reach 12–13 meters in length. They live at depths rarely seen by humans and were considered mythological until a live specimen was photographed in the wild for the first time in 2004."
+  },
+  {
+    "category": "Mythology",
+    "fact": "<em>Flood myths</em> appear in virtually every ancient culture worldwide — Sumerian, Hebrew, Hindu, Greek, Chinese, Norse, Maya, and hundreds of others — suggesting either a common origin or universal response to a real prehistoric catastrophe.",
+    "detail": "The Black Sea Flood hypothesis proposes that a catastrophic flooding of the Black Sea basin around 5600 BCE, as Mediterranean waters broke through the Bosphorus, may underlie many flood myths across Eurasia."
+  },
+  {
+    "category": "Mythology",
+    "fact": "The <em>Hawaiian goddess Pele</em> is the creator of the Hawaiian Islands — she is the goddess of volcanoes and is said to reside in the Kīlauea volcano, which has been erupting almost continuously since 1983.",
+    "detail": "Pele's tears (small glassy volcanic drops) and Pele's hair (thin glass fibers formed by lava blown by wind) are real geological phenomena named after her. Her mythology is still actively practiced among native Hawaiians."
+  },
+  {
+    "category": "Economics",
+    "fact": "<em>The prisoner's dilemma</em> explains why countries overfarm fish, overpollute air, and underinvest in global public goods — each actor's individually rational choice leads to collectively irrational outcomes.",
+    "detail": "Game theory calls this a 'collective action problem.' Solutions include binding international agreements, shared monitoring, and reputation systems — all attempts to change the payoff structure so cooperation becomes individually rational."
+  },
+  {
+    "category": "Economics",
+    "fact": "<em>Behavioral economics</em>, developed by Kahneman and Tversky, revolutionized economics by documenting that people systematically violate rational choice theory — they have inconsistent preferences, make predictable errors, and are heavily influenced by framing.",
+    "detail": "Richard Thaler won the 2017 Nobel Prize in Economics for applying behavioral insights to policy through 'nudges' — small changes to choice architecture that predictably improve decisions without restricting options."
+  },
+  {
+    "category": "Medicine",
+    "fact": "The <em>bubonic plague pathogen</em> — Yersinia pestis — still circulates in animal reservoirs in the American West, Africa, and Asia. Several dozen cases of human plague occur annually in the United States alone.",
+    "detail": "It is now treatable with antibiotics but can be fatal if not treated quickly. The 1347 pandemic killed up to 60% of Europe's population — today's cases survive because the bacterium has not changed but our treatment has."
+  },
+  {
+    "category": "Medicine",
+    "fact": "<em>Hospitals were historically more dangerous</em> than not going to them — before antisepsis, the mortality rate for surgical patients was so high that elective surgery was almost never attempted.",
+    "detail": "Joseph Lister introduced antiseptic techniques using carbolic acid in 1865, inspired by Pasteur's germ theory. Surgical mortality at his hospital fell from about 46% to 15% — one of medicine's most dramatic and rapid improvements."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "The <em>Voyager probes' golden records</em> include greetings in 55 languages, 116 images, sounds of Earth, and 90 minutes of music including Bach, Beethoven, Chuck Berry, and Azerbaijani bagpipes.",
+    "detail": "Carl Sagan chaired the committee that selected the content. The records are encoded with instructions for how to build a device to play them. They were intended for any civilization that might intercept the probes in millions of years."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "<em>Spacecraft gravity assists</em> — where a probe slings around a planet to gain speed — extract real energy from the planet's orbital momentum, causing it to very slightly slow down.",
+    "detail": "The effect on Earth from all human spacecraft gravity assists is approximately 10^-17 times smaller than a rounding error in measuring Earth's position — but physically real. Spacecraft have used Jupiter, Saturn, Venus, and Earth for gravity assists."
+  },
+  {
+    "category": "Science",
+    "fact": "The <em>placebo effect works on animals</em> — rats conditioned to receive a drug will show physiological responses to saline injections given in the same context, demonstrating that conditioning rather than expectation is sufficient.",
+    "detail": "This complicates veterinary research and shows that some placebo effects don't require consciousness or expectation. It suggests the nervous system learns associations between environmental cues and physiological responses."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Viruses may have been essential</em> to the evolution of complex life — it is estimated that 8% of the human genome consists of ancient viral DNA (endogenous retroviruses) that has been co-opted for biological functions.",
+    "detail": "The placenta was in part made possible by a viral protein called syncytin, derived from an ancient retrovirus that infected our ancestors about 130 million years ago. Viruses may have contributed key innovations throughout evolution."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>English language</em> has been shaped by more invasions than any other European language — Old English (Anglo-Saxon), then Norse (Viking invasions), then French (Norman Conquest of 1066), each adding thousands of words.",
+    "detail": "This layering gives English remarkable synonymy: you can be 'friendly' (Old English), 'amiable' (French), or 'amicable' (Latin) — three words for essentially the same concept with subtly different social register."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>Silk Road</em> was not a road but a network of routes — and it carried ideas, religions, diseases, and technologies as much as silk, spices, and goods between China and the Mediterranean for over 1,500 years.",
+    "detail": "Buddhism spread along the Silk Road from India to China. The Black Death traveled it from Asia to Europe. Papermaking, printing, gunpowder, and the compass all traveled westward along its routes."
+  },
+  {
+    "category": "Geography",
+    "fact": "The <em>highest capital city</em> in the world is Quito, Ecuador at 2,850 meters — not La Paz, Bolivia, which is commonly cited but is the seat of government (not constitutional capital) and sits at 3,640 meters as the world's highest seat of government.",
+    "detail": "High altitude affects everything in these cities — water boils at lower temperatures (affecting cooking), ultraviolet radiation is more intense, and visitors often experience altitude sickness requiring days of acclimatization."
+  },
+  {
+    "category": "Geography",
+    "fact": "<em>The Euphrates River</em> is running dry — Turkey's dam construction upstream has reduced flow by 40%, Syria and Iraq are fighting over the remainder, and some sections that have flowed for 10,000 years of civilization no longer reach the sea.",
+    "detail": "The Fertile Crescent — the cradle of Western civilization — is increasingly arid. Iraq now imports water to support agriculture that has existed there since the invention of farming. Climate change is accelerating the trend."
+  },
+  {
+    "category": "Geography",
+    "fact": "<em>Singapore</em> has grown 25% in area since 1960 through land reclamation — it imports sand from neighboring countries to build new land into the sea, making it the world's largest sand importer.",
+    "detail": "The sand trade has caused political disputes with Malaysia and Indonesia, who have restricted exports after witnessing their own small islands disappearing to supply Singapore's expansion. Singapore's land area has grown from 581 km² to 733 km²."
+  },
+  {
+    "category": "Nature",
+    "fact": "<em>Moss</em> can survive being completely desiccated for decades and spring back to life when moistened — some specimens have been revived after over 100 years of dry dormancy in museum collections.",
+    "detail": "Mosses have no vascular system and must absorb water across their entire surface, making them extremely sensitive to water availability. They are often the first colonizers of bare rock, beginning the process of soil formation."
+  },
+  {
+    "category": "Nature",
+    "fact": "The <em>Saharan silver ant</em> ventures out to forage during the hottest part of the desert day — temperatures up to 70°C — when predators are sheltering, giving it a 10-minute window before it would die from the heat.",
+    "detail": "It navigates back to its nest in a straight line using sun position and counting its own steps. It has the highest maximum speed of any known ant species and special heat-dissipating foot pads."
+  },
+  {
+    "category": "Animals",
+    "fact": "<em>Mantis shrimps</em> strike so fast they can boil water in front of their club — the cavitation bubble collapses with a flash of light, a shockwave, and a temperature spike approaching that of the Sun's surface.",
+    "detail": "The animals must have extremely tough arm structures that can withstand the repeated impact forces that would shatter human-engineered materials. Materials scientists study mantis shrimp clubs for applications in aerospace composites."
+  },
+  {
+    "category": "Technology",
+    "fact": "The <em>self-driving car technology</em> stack requires processing about 4 terabytes of data per day from sensors — more than most people generate in their lifetime, processed in real time to navigate safely.",
+    "detail": "A Level 4 autonomous vehicle integrates cameras, radar, lidar, GPS, and HD maps — and must do so while handling edge cases that no training dataset has ever seen. This 'long tail' of rare scenarios is the central technical challenge."
+  },
+  {
+    "category": "Technology",
+    "fact": "<em>Quantum cryptography</em> offers theoretically unbreakable communication — any interception of a quantum key disturbs it irreversibly, alerting the communicating parties and making eavesdropping detectable.",
+    "detail": "The first quantum-encrypted bank transfer was made in Vienna in 2004. China launched a quantum satellite (Micius) in 2016 and demonstrated quantum key distribution over 1,200 km. Commercial quantum networks are in early deployment."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>The ozone layer</em> would not exist without life — ozone is produced by ultraviolet radiation splitting oxygen molecules, and that oxygen came entirely from photosynthetic life over billions of years.",
+    "detail": "Before photosynthetic cyanobacteria evolved about 2.7 billion years ago, Earth's atmosphere had almost no oxygen and no ozone layer. Life created its own UV shield, allowing more complex organisms to eventually colonize land."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>Tea</em> is the world's most consumed beverage after water — approximately 3.7 billion cups are drunk daily, with China, India, and Turkey being the top consumers per capita.",
+    "detail": "All true tea — black, green, oolong, and white — comes from the same plant, Camellia sinensis. The differences arise from processing: green tea is unoxidized, black is fully oxidized, and oolong is partially oxidized."
+  },
+  {
+    "category": "Food",
+    "fact": "The <em>original Worcestershire sauce</em> recipe was discovered to be unpalatable when first made and was stored in barrels in a cellar for a year — when rediscovered, the fermented version was delicious.",
+    "detail": "The sauce was an attempt to replicate a recipe from India brought back to England in 1835. The forgotten barrel of fermenting fish sauce and vegetables turned into one of the most successful condiment accidents in culinary history."
+  },
+  {
+    "category": "Food",
+    "fact": "<em>The spork</em> was patented in 1874 — long before the plastic airline version became common. But combined utensils (spoons with fork-like edges) appear in archaeological records from the early 1800s and were common in silver cutlery sets.",
+    "detail": "The word 'spork' appeared in dictionaries in 1909. KFC popularized the disposable plastic version in the 1970s. Despite being an obvious design, no single inventor successfully commercialized it for over a century."
+  },
+  {
+    "category": "Astronomy",
+    "fact": "<em>The universe may be finite</em> but have no boundary — just as the surface of a sphere is finite but has no edge, space may curve back on itself in higher dimensions, making the universe finite but unbounded.",
+    "detail": "If the universe is finite, light traveling in one direction long enough would eventually return from the opposite direction — though the universe is expanding too fast for this to be practically observable with current technology."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>The same mutation</em> that causes sickle cell disease also provides significant protection against malaria — which is why it persists in populations from malaria-endemic regions despite being potentially fatal.",
+    "detail": "Carrying one copy of the gene (sickle cell trait) provides protection without causing the disease; carrying two copies causes sickle cell disease. This is a classic example of heterozygote advantage in population genetics."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>first newspaper</em> was published in Strasbourg in 1605 — but rumors, proclamations, and handwritten newsletters had circulated through European cities since Roman times.",
+    "detail": "The Roman 'Acta Diurna' ('Daily Events'), posted publicly by Julius Caesar's order in 59 BCE, is considered an early predecessor. It contained government announcements, military campaigns, and public events — the world's first public news bulletin."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Willpower is not a fixed trait</em> but a depletable resource that can be restored — ego depletion theory suggests that self-control draws on a limited pool that is restored by rest, positive mood, and glucose.",
+    "detail": "The original ego depletion studies have proven difficult to replicate in some contexts, sparking debate. But something like decision fatigue is real and well-documented in parole boards, medical decisions, and consumer choices throughout the day."
+  },
+  {
+    "category": "Philosophy",
+    "fact": "The <em>paradox of the heap</em> (Sorites paradox) asks at what point does a heap of sand cease to be a heap if you remove one grain at a time — revealing that many ordinary concepts have no precise boundaries.",
+    "detail": "Vagueness is a genuine logical problem, not just imprecision in language. Many concepts — tall, bald, rich, old — resist precise definition. Fuzzy logic attempts to handle vagueness mathematically with degrees of truth rather than binary true/false."
+  },
+  {
+    "category": "Medicine",
+    "fact": "The <em>immune system</em> has a 'dark side' — autoimmune diseases occur when it attacks the body's own tissues, affecting approximately 50 million Americans. Type 1 diabetes, rheumatoid arthritis, and multiple sclerosis are all autoimmune conditions.",
+    "detail": "The gut microbiome plays a crucial role in training the immune system to distinguish self from non-self. Early antibiotic exposure and overly sterile environments in childhood are associated with higher rates of autoimmune disease."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "<em>Arrow's impossibility theorem</em> proves that no ranked voting system can simultaneously satisfy all of a reasonable set of fairness criteria — every voting method has fundamental flaws.",
+    "detail": "Kenneth Arrow proved in 1951 that any ranked choice system with 3+ candidates will either fail to reflect voters' preferences accurately or produce paradoxical results. This theorem has profound implications for democratic theory."
+  },
+  {
+    "category": "Linguistics",
+    "fact": "<em>Polysynthetic languages</em> like Yupik (Alaskan Inuit) can express in a single word what English requires an entire sentence for — the word 'tawakiqutiqarpiit' means 'Do you have any tobacco for sale?'",
+    "detail": "In polysynthetic languages, information about subject, object, tense, aspect, evidentiality, and politeness can all be encoded in morphemes attached to a single verb root. Some linguists estimate Yupik has over 250,000 possible verb forms."
+  },
+  {
+    "category": "Art & Music",
+    "fact": "<em>Led Zeppelin's</em> 'Stairway to Heaven' has been described as the most requested song in the history of rock radio — and is still played approximately 4,000 times per day on American radio stations.",
+    "detail": "It was never released as a single in the UK, which is partly why it never topped charts but still achieved cultural ubiquity. Jimmy Page's guitar solo has been ranked the greatest in rock history in multiple polls."
+  },
+  {
+    "category": "Animals",
+    "fact": "The <em>slow loris</em> is the world's only venomous primate — it secretes a toxin from glands on its arms that combines with saliva to create a potent venom used for defense and possibly competition.",
+    "detail": "The venom causes necrotic wounds in predators and can trigger anaphylactic shock. Slow lorises are illegally traded as pets despite being endangered — their 'cute' yawning is actually a defensive threat display before they bite."
+  },
+  {
+    "category": "Geography",
+    "fact": "The <em>Pacific Ocean</em> is larger than all of Earth's landmasses combined — covering about 165 million km², it is larger than the combined land area of all continents and islands (approximately 150 million km²).",
+    "detail": "The Pacific's average depth is 4,000 meters and contains over half of the world's oceanic water. Its Ring of Fire — the horseshoe of tectonic activity around its rim — produces 90% of the world's earthquakes."
+  },
+  {
+    "category": "Space",
+    "fact": "The <em>first color photograph of Mars</em> revealed it wasn't the reddish-orange of early images — those were miscalibrated. Modern calibrated images show Mars has a butterscotch sky that turns blue at sunset — the opposite of Earth.",
+    "detail": "Mars's pink-tan sky comes from fine iron oxide dust suspended in the thin atmosphere. At sunset, the dust scatters blue light toward the sun rather than away from it, producing a blue glow around the setting sun."
+  },
+  {
+    "category": "Science",
+    "fact": "<em>Hibernating animals</em> are not truly asleep — their body temperature drops, heart rate slows dramatically, and metabolism decreases by 95%, but they can be aroused. True sleep actually requires higher brain activity than hibernation.",
+    "detail": "Some animals hibernate without dropping body temperature significantly (black bears lower theirs only 8°C) while others reach near-freezing (Arctic ground squirrels go below 0°C). The distinction between hibernation and torpor involves depth and duration."
+  },
+  {
+    "category": "History",
+    "fact": "The <em>Wright Brothers' first flight</em> lasted only 12 seconds and covered 37 meters — shorter than the wingspan of a modern Boeing 747. Yet within 66 years, humans landed on the Moon.",
+    "detail": "The 1903 Kitty Hawk flight was so brief that newspapers initially dismissed the claim. The Wrights had to fly again for reporters in 1904 and 1905 to prove it, by which time they had already achieved 39-minute sustained flights."
+  },
+  {
+    "category": "Psychology",
+    "fact": "<em>Sleep consolidates memories</em> — during sleep, the brain replays and strengthens neural patterns formed during waking hours, transferring information from short-term to long-term memory.",
+    "detail": "The hippocampus, which holds new memories, 'talks to' the cortex during slow-wave sleep, gradually transferring memories to more permanent storage. This is why studying and sleeping is more effective than cramming through the night."
+  },
+  {
+    "category": "Technology",
+    "fact": "The <em>floppy disk</em> — the icon still used for 'save' in most software — was last manufactured in 2010. Young users today see a save icon but have never used or seen an actual floppy disk.",
+    "detail": "The 3.5-inch floppy disk, which looks nothing like a floppy, replaced the genuinely floppy 8-inch and 5.25-inch versions. Japan's government was still using them for official documents until 2024 when they were finally phased out."
+  },
+  {
+    "category": "Mathematics",
+    "fact": "The <em>number e</em> (approximately 2.71828) appears naturally in the mathematics of compound interest, population growth, radioactive decay, and probability — it is as fundamental as pi, yet far less famous.",
+    "detail": "e is the base of the natural logarithm. It appears wherever processes involve continuous change proportional to current value — which describes growth, decay, and waves. Jacob Bernoulli discovered it while studying compound interest in 1683."
   }
 ]
