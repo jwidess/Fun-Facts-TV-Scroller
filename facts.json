@@ -2791,8 +2791,8 @@
   },
   {
     "category": "Linguistics",
-    "fact": "The Finnish word for 'soap opera' is <em>'saippuasinkki'</em> and the longest palindrome in any language.",
-    "detail": "It means 'soap sink' and reads the same forwards and backwards."
+    "fact": "A famous Finnish palindrome is <em>saippuakivikauppias</em>, often cited as one of the longest.",
+    "detail": "It roughly means 'soapstone vendor' or 'soap dealer' and reads the same forwards and backwards."
   },
   {
     "category": "Linguistics",
@@ -6676,8 +6676,8 @@
   },
   {
     "category": "Science",
-    "fact": "The <em>appendix of all known appendixes</em> is the appendix of the human immune system, the tonsils — they are lymph nodes in the throat that sample bacteria entering the body through the mouth.",
-    "detail": "Like the appendix, tonsils were removed routinely for most of the 20th century. Current guidelines recommend removal only when infections recur frequently — they play a role in early childhood immune development."
+    "fact": "Tonsils are lymphoid tissues at the back of the throat that sample microbes entering through the mouth and help train the immune system, especially in childhood.",
+    "detail": "They are part of Waldeyer's ring (not true lymph nodes). Like the appendix, tonsils were often removed in the 20th century; today removal is recommended mainly for recurrent infections because they contribute to early immune development."
   },
   {
     "category": "Science",
